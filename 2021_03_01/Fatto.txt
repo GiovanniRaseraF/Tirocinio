@@ -1,0 +1,20 @@
+2021 03 01
+    - Discussione generale su cosa dovrò fare durante 
+        il tirocinio
+    - Presentazione dell'Hardware 
+    - Creazione di un utente per windows
+        - Installazione di programmi generali
+        - Creazione di una VM con Virtual Box con Ubuntu 18
+        - Installazione degli essentials
+        - Installazione di Yocto Project 
+            - Creazione dei file necessari a yocto per fare il 
+                bitbake del progetto 
+            - bitbake di tutto che dovrebbe finire in 3 ore
+
+
+TODO:
+    - Finire di fare il bitbake 
+    - Finire di guardare il tutorial su youtube
+    - Continuare e installere il primo driver 
+
+        
