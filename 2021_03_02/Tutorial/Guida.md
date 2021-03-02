@@ -31,5 +31,13 @@ chmod -R -w ${HOME}/gcc-arm-none-eabi-10-2020-q4-major
 # SOLO SE TUTTO VA A BUON FINE VERRA' INSTALLATO
 ```
 - Attenzione: 
-    - il nome del file gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2 potrebbe essere diverso in base alla versione scaricata quindi se non va a buon fine basterà controllare che il nome sia coerente con quello scaricato
+    - il nome del file gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2 potrebbe essere diverso in base alla versione scaricata; quindi se non va a buon fine basterà controllare che il nome sia coerente con quello scaricato
     - Il file potrebbe non trovarsi nella cartella ~/Downloads/
+
+- Un piccolo test:
+```bash
+cd ~
+cd gcc-arm-none-eabi-10-2020-q4-major
+./bin/arm-none-eabi-gcc --version
+./bin/arm-none-eabi-gdb --version
+```
