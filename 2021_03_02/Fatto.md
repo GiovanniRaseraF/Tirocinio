@@ -5,5 +5,5 @@
     - Finito di fare il bitbake
     - Creazione dell'sdk da bitbake
     - Installazione del sdk tramite il comando sh creato dal comando precedente
-    - Creazione tutorial per installazione di gcc-arm per la compilazione di 
-    codice toradex
+    - Compilazione di un esempio di Toradex Colibri iMX7 
+    - Creazione tutorial per installazione di gcc-arm per la compilazione di codice toradex

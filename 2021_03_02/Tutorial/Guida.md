@@ -2,6 +2,7 @@
 Il tutorial spiega come compilare del codice scritto in C per 
 Toradex Colibri iMX7.
 !!Tutto il codice bash è testato su Ubuntu.
+[Guida](https://developer.toradex.com/getting-started/advanced-module-heterogeneous-multicore-processing-hmp/heterogeneous-multicore-processing-hmp-compiling-examples-from-command-line)
 
 ## Prerequisiti
 ```bash
