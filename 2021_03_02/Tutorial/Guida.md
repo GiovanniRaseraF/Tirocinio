@@ -42,13 +42,14 @@ cd gcc-arm-none-eabi-10-2020-q4-major
 ./bin/arm-none-eabi-gdb --version
 ```
 
-
 ## Download della repo freeRTOS di Toradex
 - Scaricare la repo
 ```bash
 cd ~
 git clone https://github.com/toradex/FreeRTOS-Colibri-iMX7
 ```
+
+## Compilazione dell'esempio
 - Spostarti nella cartella esempi e selezionarne uno, ad esempio:
 ```bash
 cd ~
@@ -58,4 +59,12 @@ cd ./FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/driver_examples/gpio_bank2_i
 ```bash
 # Esporto la locazione del gcc-arm che ho precedentemente installato
 export ARMGCC_DIR=~/gcc-arm-none-eabi-10-2020-q4-major
+```
+- Attenzione:
+    - VA FATTO UN EXPORT OGNI VOLTA CHE RIAPRO LA SHELL
+
+- Ora posso compilare:
+```bash
+./clean.sh
+./build_all.sh
 ```
