@@ -6,6 +6,7 @@ Toradex Colibri iMX7.
 ## Prerequisiti
 ```bash
 #Installazione dei pacchetti necessari
+
 sudo apt update 
 sudo apt install git
 sudo dpkg --add-architecture i386
@@ -15,4 +16,6 @@ sudo apt-get install make cmake
 
 - A questo punto è necessario scaricare l'ultima versione di gcc-arm 
 come pacchetto *tar.bz2
-- Sarà necessario scaricare la versione adatta al sistema operativo utilizzato per compilare il codice (DI SOLITO X86_64).
+- Sarà necessario scaricare la versione adatta al sistema operativo utilizzato per compilare il codice (SOLITAMENTE X86_64).
+- [Sito di ARM per scaricare gcc-arm](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+
