@@ -41,3 +41,21 @@ cd gcc-arm-none-eabi-10-2020-q4-major
 ./bin/arm-none-eabi-gcc --version
 ./bin/arm-none-eabi-gdb --version
 ```
+
+
+## Download della repo freeRTOS di Toradex
+- Scaricare la repo
+```bash
+cd ~
+git clone https://github.com/toradex/FreeRTOS-Colibri-iMX7
+```
+- Spostarti nella cartella esempi e selezionarne uno, ad esempio:
+```bash
+cd ~
+cd ./FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/driver_examples/gpio_bank2_imx/armgcc
+```
+- Sarà necessario esportare delle variabili d'ambiente per permettere al make di compilare i file
+```bash
+# Esporto la locazione del gcc-arm che ho precedentemente installato
+export ARMGCC_DIR=~/gcc-arm-none-eabi-10-2020-q4-major
+```
