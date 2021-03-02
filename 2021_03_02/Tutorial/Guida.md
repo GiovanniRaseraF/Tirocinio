@@ -1,4 +1,4 @@
-# Compilazione con gcc-arm (scritto da Toradex)
+# Compilazione con gcc-arm
 Il tutorial spiega come compilare del codice scritto in C per 
 Toradex Colibri iMX7.
 !!Tutto il codice bash è testato su Ubuntu.
@@ -19,3 +19,12 @@ come pacchetto *tar.bz2
 - Sarà necessario scaricare la versione adatta al sistema operativo utilizzato per compilare il codice (SOLITAMENTE X86_64).
 - [Sito di ARM per scaricare gcc-arm](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
 
+## Installazione del gcc-arm
+- Dopo aver scaricato il file *tar.bz2 sarà necessario installarlo
+```bash
+# Lo installeremo nella cartella home
+
+cd ~
+sudo apt install tar && tar xjf ~/Downloads/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2
+
+```
