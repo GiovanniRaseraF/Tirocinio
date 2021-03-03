@@ -1,0 +1,42 @@
+/dts-v1/;
+
+/dts-v1/;
+#include <dt-bindings/gpio/gpio.h>
+#include "imx7.dtsi"
+
+/ {
+	model = "Toradex Colibri iMX7S/D";
+	compatible = "toradex,imx7-colibri", "fsl,imx7";
+
+	chosen {
+		stdout-path = &uart1;
+	};
+};
+
+/*
+Abilito la porta serial ad essere attiva 
+siccome di solito è disabled  nel file imx7.dtsi
+*/ 
+&uart1{
+    status = "okay";
+};
+
+/*
+A questo punto accedo alla seriale dal kernel e posso avere la console
+*/
+
+/*Se mi voglio collegare ad un sensore devo creare un collegamento 
+guardando prima nella documentasione sotto
+Documentation/devicetree/bindings/
+in questo caso è stato preso dagli esempi dati da linux
+*/
+&i2c1 {
+    tsl256@29 {
+        compatible = "amstaos,tsl2563";
+        reg = <0x29>;
+        amstaos,cover-comp-gain = <16>;
+    };
+};
+
+/*dt_2_config*/
+
