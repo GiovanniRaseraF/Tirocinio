@@ -1,4 +1,6 @@
 # Tirocinio
+# 2021 03 04
+  - inizio 9.00,      fine: 17.40
 # 2021 03 03
   - inizio 9.00,      fine: 17.40
 # 2021 03 02
