@@ -77,5 +77,6 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
 - Terminale 1
     - Cliccare INVIO
         - Se appare questo messaggio:
-        - 
+        - <img src="ToradexEasyInstallerError.PNG" width="100">
+        - Controlla USB collegate alla VM e ripeti l'Accensione
 
