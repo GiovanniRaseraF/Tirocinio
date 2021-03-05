@@ -85,6 +85,6 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
     - Aspettare che Terminale 1 abbia finito la procedura
     - Cliccare INVIO
     - Se tutto è andato bene apparirà una schermata di VNC simile a questa
-    - 
+    - <img src="ToradexEasyInterface.png" width="100">
 
 
