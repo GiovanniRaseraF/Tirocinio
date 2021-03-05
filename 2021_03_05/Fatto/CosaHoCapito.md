@@ -1,0 +1,7 @@
+- Devo usare il cross compiler per compilare per architettura arm
+- Se compilo per architettura x86 non va bene
+    - un modo veloce per capire se ho compilato per larchitettura giusta è usare
+    - file ciao.o 
+    - se mi dice arm allora va bene
+    - Seguito il tutorial che spiega come fare un cross compile di yocto
+    - https://www.yoctoproject.org/docs/2.1/sdk-manual/sdk-manual.html
