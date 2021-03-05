@@ -34,7 +34,7 @@
             vTaskStartScheduler();
         ```
 
-- La funzione **static void StrEchoTask(void *pvParameters)**
+- La funzione **static void StrEchoTask(void \*pvParameters)**
     - Inisializzo delle variabili
     - Creao due variabili 
         ```c
@@ -46,3 +46,19 @@
             result = rpmsg_rtos_init(0 /*REMOTE_CPU_ID*/, &rdev, RPMSG_MASTER, &app_chnl);
             assert(result == 0);
         ```
+    - Posso usare la funzione **GPIO_Ctrl_GetKey(BOARD_GPIO_SWITCH2_CONFIG);**
+        - Per leggere uno switch e devo impostarlo all'interno del file: gpio_ctrl.c
+    - A questo punto posso leggere dall GPIO se lo switch è premuto o no
+        - posso quindi leggere dal rx_buf
+        ```c
+            result = rpmsg_rtos_recv_nocopy(app_chnl->rp_ept, &rx_buf, &len, &src, 0);    
+        ```
+    - Mi devo assicurare che il buffer non sia troppo grandee e poi lo posso leggere
+        ```c
+            /* copio la stringa nel buffer rx */
+            assert(len < sizeof(str_buffer));
+            memcpy(str_buffer, rx_buf, len);
+            str_buffer[len] = 0; /* End string by '\0' */     
+        ```
+
+    
