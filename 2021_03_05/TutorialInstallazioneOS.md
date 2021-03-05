@@ -5,6 +5,7 @@ Questo tutorial permette di installare il SO creato con Yocto project nel Colibr
 - VMWare (VirtualBox NON FUNZIONA)
 - Una VM con Linux
 - SDCard (Chiavetta USB NON FUNZIONA)
+
 ## All'interno di Linux
 - vnc, minicom, git, connessione internet
 ```bash
@@ -28,4 +29,16 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
 - Connettere il cavo USB  (Computer(USB)----(microUSB)Colibri_iMX7)
 - Nella finestra dei dispositivi di VMWare accedere al dispositivo (Texas Instruments)
     - Attenzione: Verranno visualizzati altri dispositivi USB che dovranno essere collegati alla VM in modo che la scheda posso comunicare.
-    ![Dispositivi USB](CatturaDispositiviUSB_VM.PNG)
+    - <img src="CatturaDispositiviUSB_VM.PNG" width="200">
+- A qusto punto la scheda sarà propriamente collegata alla VM
+    - Attenzione: Come vedremo in seguito potrebbe essere necessario accendere la scheda per vedere alcuni dei dispositivi
+
+## Accensione (Recovery Mode)
+- FARE ATTENZIONE IN QUESTO PASSAGGIO:
+    - NON PLETTERE TROPPO LA BOARD
+    - TOCCARE SOLO I PIN CHE VERRANNO INDICATI
+    - ESSERE SICURI CHE LA SCHEDA NON TOCCI IL PCB SOTTOSTANTE IN ALCUN MODO
+
+- Attaccare alimentatore, e accenderlo
+- Fare **corto** tra questi due pin.
+- <img src="imx7.jpg" width="200">
