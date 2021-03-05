@@ -17,8 +17,16 @@
     - Configuro quello che mi serve
         - ad esempio  GPIO_Ctrl_Init();
     - Inizializzo MU interrupt
-        ```cpp
+        ```c
             MU_Init(BOARD_MU_BASE_ADDR);
             NVIC_SetPriority(BOARD_MU_IRQ_NUM, APP_MU_IRQ_PRIORITY);
             NVIC_EnableIRQ(BOARD_MU_IRQ_NUM);
         ```
+    - A questo punto devo dire a freeRTOS di creare un task
+        ```c
+            xTaskCreate(StrEchoTask, "String Echo Task", APP_TASK_STACK_SIZE,
+                NULL, tskIDLE_PRIORITY+1, NULL);
+        ```
+        - Questo task deve contenere la funzione che voglio eseguire [freeRTOS doc](https://www.freertos.org/a00125.html)
+        - Nel mio caso voglio creare un task per la funzione: StrEchoTask
+    - 
