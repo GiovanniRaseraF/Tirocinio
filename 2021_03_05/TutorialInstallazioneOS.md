@@ -10,9 +10,9 @@ Questo tutorial permette di installare il SO creato con Yocto project nel Colibr
 ### Preparazione dell'SDCard
 - Collegare l'SDCard al Computer
 - Formattarla in FAT32
-- Aprire il file: Colibri-iMX7-eMMC_Console-Image-Tezi_3.0b4-20210302.tar
-- Copiare il contenuto della cartella: Colibri-iMX7-eMMC_Console-Image-Tezi_3.0b4-20210302 nella SDCard
-- 
+- Aprire il file: *Colibri-iMX7-eMMC_Console-Image-Tezi_3.0b4-20210302.tar*
+- Copiare il contenuto della cartella: *Colibri-iMX7-eMMC_Console-Image-Tezi_3.0b4-20210302* nella SDCard
+- <img src="FileSDCard.PNG" width="300">
 
 ### All'interno di Linux
 - vnc, minicom, git, connessione internet
