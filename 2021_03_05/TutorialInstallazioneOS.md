@@ -45,7 +45,7 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
         cd ~
         cd Colibri-iMX7_ToradexEasyInstaller_1.8-20181019/
         # NON PREMERE INVIO NEL PROSSIMO COMANDO
-        chmod +x recovery-linux.sh && ./recovery-linux.sh
+        chmod +x recovery-linux.sh && ./recovery-linux.sh -d
       ```
     - Terminale **2**:
     - ```bash
@@ -58,13 +58,14 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
 ## Esecuzione della procedura
 - Quando abbiamo Workspace pronto e board collegata possiamo:
     - **Accendere la Board in Recovery Mode**
-    - **
+    - **Utilizzo del Workspace creato precedentemente**
+    - **Installazione del SO da SDCard**
+
 ### Accensione (Recovery Mode)
 - FARE ATTENZIONE IN QUESTO PASSAGGIO:
     - **NON FLETTERE TROPPO LA BOARD**
     - **TOCCARE SOLO I PIN CHE VERRANNO INDICATI**
     - **ESSERE SICURI CHE LA SCHEDA NON TOCCI IL PCB SOTTOSTANTE IN ALCUN MODO**
-
 - Attaccare alimentatore, e accenderlo
 - Fare **corto** tra questi due pin
 - <img src="imx7.jpg" width="200">
@@ -74,4 +75,7 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
 
 ### Utilizzo del Workspace
 - Terminale 1
+    - Cliccare INVIO
+        - Se appare questo messaggio:
+        - 
 
