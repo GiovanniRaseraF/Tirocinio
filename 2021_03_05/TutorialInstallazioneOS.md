@@ -74,9 +74,17 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
 - Se si avvia il processo di linux boot allora riprovare l'Accensione
 
 ### Utilizzo del Workspace
-- Terminale 1
+- Terminale **1**:
     - Cliccare INVIO
         - Se appare questo messaggio:
         - <img src="ToradexEasyInstallerError.PNG" width="100">
         - Controlla USB collegate alla VM e ripeti l'Accensione
+    - Se non appare il messaggio di Errore allora sta avvenendo la procedura di boot (**Molto lenta**)
+    - Sarà necessario aspettare qualche minuto siccome il SO verrà scaricato da internet
+- Terminale **2**:
+    - Aspettare che Terminale 1 abbia finito la procedura
+    - Cliccare INVIO
+    - Se tutto è andato bene apparirà una schermata di VNC simile a questa
+    - 
+
 
