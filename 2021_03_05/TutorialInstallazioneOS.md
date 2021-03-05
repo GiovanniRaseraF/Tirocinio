@@ -27,3 +27,5 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
 ## Connettere la board
 - Connettere il cavo USB  (Computer(USB)----(microUSB)Colibri_iMX7)
 - Nella finestra dei dispositivi di VMWare accedere al dispositivo (Texas Instruments)
+    - Attenzione: Verranno visualizzati altri dispositivi USB che dovranno essere collegati alla VM in modo che la scheda posso comunicare.
+    ![Dispositivi USB](CatturaDispositiviUSB_VM.PNG)
