@@ -1,6 +1,6 @@
 # Tirocinio
 # 2021 03 05        
-  - **REMOTO inizio: 9.00,      fine:**
+  - **REMOTO inizio: 9.00,      fine: 18.00**
   - Creazione del Turorial Installazione OS su Colibri iMX7 
   - Studio del funzionamento di Yocto e prova di compilazione con il mio PC
   - Compilazione di codice con SDK Yocto
@@ -13,7 +13,7 @@
   - Installazione del sistema operativo all'interno di imx7
   - Installazione di Toradex Easy Installer 
   - Flash della scheda sd e del sistema operativo
-  
+
 # 2021 03 03
   - **inizio: 9.00,      fine: 17.40**
   - Lettura libro sulla programmaizone di sistemi embedded
