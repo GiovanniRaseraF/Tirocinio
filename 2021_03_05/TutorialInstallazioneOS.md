@@ -5,16 +5,16 @@ Questo tutorial permette di installare il SO creato con Yocto project nel Colibr
 - **Immagine del SO in formato .tar**
 - **VMWare (VirtualBox NON FUNZIONA)**
 - **Una VM con Linux**
-- **SDCard formattata in FAT32 (Chiavetta USB NON FUNZIONA)**
+- **SDCard formattata in FAT32 (Chiavetta USB DA PROBLEMI)**
 
-### Preparazione dell'SDCard
+### Preparazione SDCard
 - Collegare l'SDCard al Computer
 - Formattarla in FAT32
 - Aprire il file: *Colibri-iMX7-eMMC_Console-Image-Tezi_3.0b4-20210302.tar*
 - Copiare il contenuto della cartella: *Colibri-iMX7-eMMC_Console-Image-Tezi_3.0b4-20210302* nella SDCard
 - <img src="FileSDCard.PNG" width="300">
 
-### All'interno di Linux
+### Preparazione Linux
 - vnc, minicom, git, connessione internet
 ```bash
 cd ~
@@ -97,6 +97,12 @@ TODO: Spiegazione di come utilizzare minicom per collegarsi alla seriale
 TODO: Accedere a Minicom da terminale
 
 ### Installazione dell'SO da SDCard
-- L'SDCard deve essere preparata come nella sezione 
+- L'SDCard deve essere preparata come nella sezione **Preparazione SDCard**
+- Mettere l'SDCard nello slot del PCB
+- Aspettare che in Toradex Easy Install appaia la possibilità di installare l'SO dalla scheda
+- Selezionare l'SO 
+- Cliccare Install (*in alto a sinistra*)
+- Se tutto è andato bene apparirà questa schermata
+- <img src="InstallazioneRiuscita.PNG" width="400">
 
 
