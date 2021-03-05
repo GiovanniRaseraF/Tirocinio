@@ -40,13 +40,20 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
 - Aprire tre terminali (per comodità), posizionarli in modo da vederli tutti e tre
     - Terminale 1:
     - ```bash
-        #Toradex Easy Installer
-        cd ~
-        cd Colibri-iMX7_ToradexEasyInstaller_1.8-20181019/
-        #NON PREMERE INVIO NEL PROSSIMO COMANDO
-        chmod +x recovery-linux.sh && ./recovery-linux.sh
+#Toradex Easy Installer
+cd ~
+cd Colibri-iMX7_ToradexEasyInstaller_1.8-20181019/
+#NON PREMERE INVIO NEL PROSSIMO COMANDO
+chmod +x recovery-linux.sh && ./recovery-linux.sh
       ```
     - Terminale 2:
+    - ```bash
+#Toradex Easy Installer
+cd ~
+cd Colibri-iMX7_ToradexEasyInstaller_1.8-20181019/
+#NON PREMERE INVIO NEL PROSSIMO COMANDO
+chmod +x recovery-linux.sh && ./recovery-linux.sh
+      ```
     - Terminale 3:
 
 ## Esecuzione della procedura
