@@ -1,11 +1,13 @@
 # Installazione del SO compilato con Yocto in Colibri iMX7
 Questo tutorial permette di installare il SO creato con Yocto project nel Colibri iMX7
 
-## Prerequisiti
-- VMWare (VirtualBox NON FUNZIONA)
-- Una VM con Linux
-- SDCard (Chiavetta USB NON FUNZIONA)
-## All'interno di Linux
+## --**Prerequisiti**--
+- **Immagine del SO in formato .tar**
+- **VMWare (VirtualBox NON FUNZIONA)**
+- **Una VM con Linux**
+- **SDCard formattata in FAT32 (Chiavetta USB NON FUNZIONA)**
+
+### All'interno di Linux
 - vnc, minicom, git, connessione internet
 ```bash
 cd ~
@@ -16,7 +18,7 @@ wget https://www.realvnc.com/download/file/viewer.files/VNC-Viewer-6.20.529-Linu
 sudo dpkg -i VNC-Viewer-6.20.529-Linux-x64.deb
 ```
 
-## Scaricare Toradex Easy Installer
+### Scaricare Toradex Easy Installer
 ```bash
 cd ~
 wget https://docs.toradex.com/104570-colibri-imx7-toradexeasyinstaller.zip
@@ -24,8 +26,56 @@ sudo apt install unzip
 unzip 104570-colibri-imx7-toradexeasyinstaller.zip
 ```
 
-## Connettere la board
+### Connettere la board
 - Connettere il cavo USB  (Computer(USB)----(microUSB)Colibri_iMX7)
 - Nella finestra dei dispositivi di VMWare accedere al dispositivo (Texas Instruments)
-    - Attenzione: Verranno visualizzati altri dispositivi USB che dovranno essere collegati alla VM in modo che la scheda posso comunicare.
-    ![Dispositivi USB](CatturaDispositiviUSB_VM.PNG)
+    - **Attenzione**: Verranno visualizzati altri dispositivi USB che dovranno essere collegati alla VM in modo che la scheda posso comunicare.
+    - <img src="CatturaDispositiviUSB_VM.PNG" width="200">
+- A qusto punto la scheda sarà propriamente collegata alla VM
+    - **Attenzione**: Come vedremo in seguito potrebbe essere necessario accendere la scheda per vedere alcuni dei dispositivi
+
+## --**Preparazione dei tool all'interno di Linux**--
+- Questo è un punto fondamentale per capire se l'installazione sta procedendo
+
+### Workspace
+- Aprire tre terminali (per comodità), posizionarli in modo da vederli tutti e tre
+    - Terminale **1**:
+    - ```bash
+        # Toradex Easy Installer
+        cd ~
+        cd Colibri-iMX7_ToradexEasyInstaller_1.8-20181019/
+        # NON PREMERE INVIO NEL PROSSIMO COMANDO
+        chmod +x recovery-linux.sh && ./recovery-linux.sh -d
+      ```
+    - Terminale **2**:
+    - ```bash
+        # VNC, NON PREMERE invio alla fine
+        vncviewer 192.168.11.1
+      ```
+    - Terminale **3**:
+    - ###**TO_DOOOO**
+
+## Esecuzione della procedura
+- Quando abbiamo Workspace pronto e board collegata possiamo:
+    - **Accendere la Board in Recovery Mode**
+    - **Utilizzo del Workspace creato precedentemente**
+    - **Installazione del SO da SDCard**
+
+### Accensione (Recovery Mode)
+- FARE ATTENZIONE IN QUESTO PASSAGGIO:
+    - **NON FLETTERE TROPPO LA BOARD**
+    - **TOCCARE SOLO I PIN CHE VERRANNO INDICATI**
+    - **ESSERE SICURI CHE LA SCHEDA NON TOCCI IL PCB SOTTOSTANTE IN ALCUN MODO**
+- Attaccare alimentatore, e accenderlo
+- Fare **corto** tra questi due pin
+- <img src="imx7.jpg" width="200">
+- Tenere in corto i pin e accendere la scheda. (**Tenere in corto 10 secondi**)
+- E' possibile rilasciare i pin (dovrebbe fermarsi nel BOOTLOADER)
+- Se si avvia il processo di linux boot allora riprovare l'Accensione
+
+### Utilizzo del Workspace
+- Terminale 1
+    - Cliccare INVIO
+        - Se appare questo messaggio:
+        - 
+
