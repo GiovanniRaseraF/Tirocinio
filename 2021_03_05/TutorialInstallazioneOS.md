@@ -53,10 +53,7 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
         vncviewer 192.168.11.1
       ```
     - Terminale 3:
-    - ```bash
-        # VNC, NON PREMERE invio alla fine
-        vncviewer 192.168.11.1
-      ```
+    - ###**TO_DOOOO**
 
 ## Esecuzione della procedura
 ### Accensione (Recovery Mode)
