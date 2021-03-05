@@ -1,7 +1,7 @@
 # Installazione del SO compilato con Yocto in Colibri iMX7
 Questo tutorial permette di installare il SO creato con Yocto project nel Colibri iMX7
 
-## Prerequisiti
+## --**Prerequisiti**--
 - Immagine del SO in formato .tar
 - VMWare (VirtualBox NON FUNZIONA)
 - Una VM con Linux
@@ -34,27 +34,29 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
 - A qusto punto la scheda sarà propriamente collegata alla VM
     - Attenzione: Come vedremo in seguito potrebbe essere necessario accendere la scheda per vedere alcuni dei dispositivi
 
-## Preparazione dei tool all'interno di Linux
+## --**Preparazione dei tool all'interno di Linux**--
 - Questo è un punto fondamentale per capire se l'installazione sta procedendo
+
 ### Workspace
 - Aprire tre terminali (per comodità), posizionarli in modo da vederli tutti e tre
     - Terminale 1:
     - ```bash
-        #Toradex Easy Installer
+        # Toradex Easy Installer
         cd ~
         cd Colibri-iMX7_ToradexEasyInstaller_1.8-20181019/
-        #NON PREMERE INVIO NEL PROSSIMO COMANDO
+        # NON PREMERE INVIO NEL PROSSIMO COMANDO
         chmod +x recovery-linux.sh && ./recovery-linux.sh
       ```
     - Terminale 2:
     - ```bash
-        #Toradex Easy Installer
-        cd ~
-        cd Colibri-iMX7_ToradexEasyInstaller_1.8-20181019/
-        #NON PREMERE INVIO NEL PROSSIMO COMANDO
-        chmod +x recovery-linux.sh && ./recovery-linux.sh
+        # VNC, NON PREMERE invio alla fine
+        vncviewer 192.168.11.1
       ```
     - Terminale 3:
+    - ```bash
+        # VNC, NON PREMERE invio alla fine
+        vncviewer 192.168.11.1
+      ```
 
 ## Esecuzione della procedura
 ### Accensione (Recovery Mode)
