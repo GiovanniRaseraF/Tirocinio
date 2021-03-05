@@ -25,8 +25,8 @@ chmod a+x ~/bin/repo
 5) installare git
 
 sudo apt install git
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
+git config --global user.name "GiovanniRaseraF"
+git config --global user.email "giovanni.raserafarra@gmail.com"
 
 6) scaricare sorgenti per yocto :
 
