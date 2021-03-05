@@ -53,7 +53,7 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
         vncviewer 192.168.11.1
       ```
     - Terminale **3**:
-    - ###**TO_DOOOO**
+TODO: Spiegazione di come utilizzare minicom per collegarsi alla seriale
 
 ## Esecuzione della procedura
 - Quando abbiamo Workspace pronto e board collegata possiamo:
@@ -86,5 +86,7 @@ unzip 104570-colibri-imx7-toradexeasyinstaller.zip
     - Cliccare INVIO
     - Se tutto è andato bene apparirà una schermata di VNC simile a questa
     - <img src="ToradexEasyInterface.png" width="100">
+- Terminale **3**
+TODO: Accedere a Minicom da terminale
 
 
