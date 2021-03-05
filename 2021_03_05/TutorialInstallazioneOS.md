@@ -8,6 +8,10 @@ Questo tutorial permette di installare il SO creato con Yocto project nel Colibr
 - **SDCard formattata in FAT32 (Chiavetta USB NON FUNZIONA)**
 
 ### Preparazione dell'SDCard
+- Collegare l'SDCard al Computer
+- Formattarla in FAT32
+- Aprire il file: Colibri-iMX7-eMMC_Console-Image-Tezi_3.0b4-20210302.tar
+- Copiare il contenuto della cartella: Colibri-iMX7-eMMC_Console-Image-Tezi_3.0b4-20210302 nella SDCard
 - 
 
 ### All'interno di Linux
