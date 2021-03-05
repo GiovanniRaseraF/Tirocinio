@@ -1,0 +1,48 @@
+
+1) scaricare e installare ubuntu 18.04 LTS
+2) installare vmTools
+3) dipendenze per Yocto (https://www.yoctoproject.org/docs/2.6.4/mega-manual/mega-manual.html#required-packages-for-the-build-host): 
+
+sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
+     build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
+     xz-utils debianutils iputils-ping
+
+sudo apt-get install libsdl1.2-dev xterm   (per eclipse)
+
+sudo apt-get install make xsltproc docbook-utils fop dblatex xmlto  (documentazione)
+
+sudo apt-get install python-git (per usare oe-selftest)
+
+4) Installare repo :
+
+sudo apt install curl
+
+mkdir ~/bin
+export PATH=~/bin:$PATH
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+
+5) installare git
+
+sudo apt install git
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+6) scaricare sorgenti per yocto :
+
+mkdir ${HOME}/oe-core
+cd ${HOME}/oe-core
+repo init -u http://git.toradex.com/toradex-bsp-platform.git -b LinuxImage3.0 -m default.xml
+repo sync
+
+7) invocare export (va fatto ogni volta che si riapre la shell)
+
+. export
+
+8) configurare i file bblayer.conf e local.conf
+
+9) costruzione immagine : bitbake console-tdx-image
+
+10) costruzione sdk (versione estesa): bitbake console-tdx-image -c populate_sdk_ext 
+
+11) installare sdk : cd build/deploy/sdk && ./tdx-x11-glibc-x86_64-Console-Image-armv7at2hf-neon-toolchain-ext-2.6.4.sh

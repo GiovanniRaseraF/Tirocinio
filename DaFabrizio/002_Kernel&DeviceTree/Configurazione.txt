@@ -1,0 +1,53 @@
+https://developer.toradex.com/knowledge-base/build-u-boot-and-linux-kernel-from-source-code
+
+https://developer.toradex.com/device-tree-customization
+
+prerequisiti :
+
+sudo apt install git
+
+1) scaricare i sorgenti :
+
+
+git clone -b <git-branch> git://git.toradex.com/u-boot-toradex.git
+git clone -b <git-branch> git://git.toradex.com/linux-toradex.git
+
+per la versione 3.04 :
+
+git clone -b toradex_2019.07 git://git.toradex.com/u-boot-toradex.git
+git clone -b toradex_4.14-2.3.x-imx git://git.toradex.com/linux-toradex.git
+
+2)  Installare occorrente per poter compilare
+cd ~
+
+wget -O gcc-arm-8.2-2019.01-x86_64-arm-linux-gnueabihf.tar.xz "https://developer.arm.com/-/media/Files/downloads/gnu-a/8.2-2019.01/gcc-arm-8.2-2019.01-x86_64-arm-linux-gnueabihf.tar.xz?revision=c69ea519-a965-4359-84a4-cbd440ff4130&la=en&hash=09C47C70EEE96D17EA036A7A59AE961972320A31"
+
+ln -s gcc-arm-8.2-2019.01-x86_64-arm-linux-gnueabihf gcc-linaro
+
+export ARCH=arm
+
+export PATH=~/gcc-linaro/bin/:$PATH
+
+export CROSS_COMPILE=arm-linux-gnueabihf-
+
+sudo apt-get install bc build-essential git libncurses5-dev lzop perl libssl-dev
+
+sudo apt-get install u-boot-tools
+
+sudo apt install gcc-arm-linux-gnueabihf
+
+3) 
+cd kernel-dev/  (cartella dove si è scaricato i sorgenti)
+cd linux-toradex/
+
+4) make colibri_imx7_defconfig FORSE colibri_imx7_emmc_defconfig  !!Da chiedere a Fabrizio 
+***********************************************************************
+non funziona se non si fanno gli esport ogni volta che si apre la shell
+***********************************************************************
+export ARCH=arm
+export PATH=~/gcc-linaro/bin/:$PATH
+export CROSS_COMPILE=arm-linux-gnueabihf-
+
+
+5) make imx7d-colibri-eval-v3-cynexo.dtb (lanciarlo dalla cartella arch/arm/boot/dts/)
+

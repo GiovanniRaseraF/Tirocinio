@@ -1,0 +1,37 @@
+https://developer.toradex.com/knowledge-base/linux-sdks
+
+dall'sdk generato con yocto :
+
+./tdx-x11-glibc-x86_64-Console-Image-armv7at2hf-neon-toolchain-ext-2.6.4.sh 
+
+questo crea una cartella dentro cui c'è l'occorrente per il crosscompile
+
+si va nella cartella creata
+
+si fa 
+
+. environment-setup-armv7at2hf-neon-tdx-linux-gnueabi 
+
+
+si crea il file hello.c 
+
+#include <stdio.h>                  // standard I/O header file
+ 
+int main(int argc, char **argv)
+{
+     printf("\nHello World !!!\n");        // print "Hello World" message on screen
+     return(0);
+}
+
+si compila con 
+
+hello.c -o hello
+
+si copia il file nella som (e se serve si dà il permesso di esecuzione)
+
+hello
+
+e dovrebbe apparire 
+
+Hello world
+
