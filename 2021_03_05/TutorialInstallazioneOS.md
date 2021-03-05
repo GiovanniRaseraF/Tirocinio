@@ -7,6 +7,9 @@ Questo tutorial permette di installare il SO creato con Yocto project nel Colibr
 - **Una VM con Linux**
 - **SDCard formattata in FAT32 (Chiavetta USB NON FUNZIONA)**
 
+### Preparazione dell'SDCard
+- 
+
 ### All'interno di Linux
 - vnc, minicom, git, connessione internet
 ```bash
@@ -88,5 +91,8 @@ TODO: Spiegazione di come utilizzare minicom per collegarsi alla seriale
     - <img src="ToradexEasyInterface.png" width="100">
 - Terminale **3**
 TODO: Accedere a Minicom da terminale
+
+### Installazione dell'SO da SDCard
+- L'SDCard deve essere preparata come nella sezione 
 
 
