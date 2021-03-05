@@ -29,4 +29,20 @@
         ```
         - Questo task deve contenere la funzione che voglio eseguire [freeRTOS doc](https://www.freertos.org/a00125.html)
         - Nel mio caso voglio creare un task per la funzione: StrEchoTask
-    - 
+    - Alla fine faccio partire lo scheduler:
+        ```c
+            vTaskStartScheduler();
+        ```
+
+- La funzione **static void StrEchoTask(void *pvParameters)**
+    - Inisializzo delle variabili
+    - Creao due variabili 
+        ```c
+            struct remote_device *rdev = NULL;          /*Puntatore a cpu remota*/
+            struct rpmsg_channel *app_chnl = NULL;      /*Puntatore al canale*/
+        ```
+    - Inizializzo il canale
+        ```c
+            result = rpmsg_rtos_init(0 /*REMOTE_CPU_ID*/, &rdev, RPMSG_MASTER, &app_chnl);
+            assert(result == 0);
+        ```
