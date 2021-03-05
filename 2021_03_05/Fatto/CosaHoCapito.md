@@ -5,3 +5,9 @@
     - se mi dice arm allora va bene
     - Seguito il tutorial che spiega come fare un cross compile di yocto
     - https://www.yoctoproject.org/docs/2.1/sdk-manual/sdk-manual.html
+
+
+
+- Compilare per freeRTOS
+    - entrare in armgcc
+    - export ARMGCC_DIR=~/opt/gcc-arm-none-eabi-10-2020-q4-major
