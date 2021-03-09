@@ -44,19 +44,23 @@ int read_int_from_buffer(void *rx_buf,struct rpmsg_channel *app_chnl){
     memcpy(str_buffer, rx_buf, len);
     str_buffer[len] = 0;
 
-    //Crean
-    for(int i = 0; i < MAX_STR; i++)
-            if(str_buffer[i] == 13 || str_buffer[i] == 10)
-                str_buffer[i] = 0;
+    //Crean and controll
+    for(int i = 0; i < MAX_STR; i++){
+        if(str_buffer[i] == 13 || str_buffer[i] == 10){
+            str_buffer[i] = 0;
+        }
+    }
 
-
+    //To int
+    res = atoi(str_buffer);
+    return res;
 }
 
 static void StartStateMachine(void *pvParameters){
     int result = 0, value = 0, len = 0;
     struct remote_device *rdev = NULL;
     struct rpmsg_channel *app_chnl = NULL;
-    
+    char actual_state = 'i';
     void *rx_buf, *tx_buf;
 
     /* RPMSG Init as REMOTE */
@@ -66,15 +70,11 @@ static void StartStateMachine(void *pvParameters){
     PRINTF("Started\n\r");
 
     while(true){
-        
-        if(*str_buffer){
-            value = atoi(str_buffer);
-            PRINTF("%d\n\r", value);
-            //PRINTF("%s\n\r", str_buffer);
-        }
+        //Read value
+        value = read_int_from_buffer(rx_buf, app_chnl);
+        char new_state = findState(v[i-1], v[i]);
 
-        memset(str_buffer, 0, sizeof(str_buffer));
- 
+        //Change state
         #if 0
         if(*str_buffer){
             PRINTF("INVIATA:%s\n", str_buffer);
