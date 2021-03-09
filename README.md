@@ -1,6 +1,10 @@
 # Tirocinio
+# 2021 03 09
+  - **inizio: 9.00,      fine:** 
+# 2021 03 08
+  - **inizio: 9.00,      fine: 18.20**
 # 2021 03 05        
-  - **REMOTO inizio: 9.00,      fine:**
+  - **REMOTO inizio: 9.00,      fine: 18.00**
   - Creazione del Turorial Installazione OS su Colibri iMX7 
   - Studio del funzionamento di Yocto e prova di compilazione con il mio PC
   - Compilazione di codice con SDK Yocto
