@@ -122,7 +122,7 @@ static void StartStateMachine(void *pvParameters){
 				break;
 			case 'f':
 				actual_state = 'i';
-				//TODO
+				//TODO: Da mettere la comicazione inversa verlo il A7
                 PRINTF("Peak: %d, Offset: %d\n\r", pi[0], pi[1]);
 				break;
             default:

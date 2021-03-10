@@ -19,8 +19,50 @@
 - Se tutto va a buon fine la stringa verra trasformata in intero e il risultato verrà salvato all'interno di *value
 
 ## Come comunicare con M4
-- Prima di tutto c'è bisogno di fare queste operazioni
 - Avremo due terminali aperti
-    - Terminale 1:  mi permette di compilare il codice e di inviarlo all'A7
-    - Terminale 2:  mi permette di collegarmi all'A7 e di usare 
+    - Terminale 1(T1):  mi permette di compilare il codice e di inviarlo all'A7
+    - Terminale 2(T2):  mi permette di collegarmi all'A7 e di usare ssh
+- Prima di tutto c'è bisogno di fare queste operazioni
+    - In T1:
+    ```bash
+        #Spostarsi nella cartella armgcc del proprio progetto
+        #dove è presente il file build_all.sh
+        python3 genera.py 500000 > dati.txt 
+        scp dati.txt root@192.168.11.1:/home/root
+        #Questo basta farlo la prima volta
+        scp loadData.sh root@192.168.11.1:/home/root    
+    ```
+    - In T2:
+    ```bash
+        ssh root@192.168.11.1
+        mount #TODO: Trovare cosa scrivere come mount
+    ```
+    - In T1:
+    ```bash
+        ./build_all.sh && scp ./build/*.elf root@192.168.11.1:/media/vf__ #TODO: in che media va caricato ?
+    ```
+    - In T2:
+    ```bash
+        unmount #TODO: Il medi da togliere
+        reboot
+        ssh root@192.168.11.1
+        modprobe #TODO: A chi fare il moprobe
+    ```
+- Se nel bootloader sono stati impostati i parametri giusti vedremo che il modulo si caricherà
+
+## Testare il modulo 
+- Dopo che il modulo è partino dobbiamo collegarci alla tty che ha creato
+    - In T2:
+    ```bash
+       #TODO: Collegamento alla tty
+
+        chmod +x loadData.sh
+       ./loadData.sh 0.01 < dati.txt
+    ```
+
+
+
+
+
+
 
