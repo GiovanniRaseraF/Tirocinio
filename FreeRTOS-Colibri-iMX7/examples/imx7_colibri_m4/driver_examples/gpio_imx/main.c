@@ -100,14 +100,10 @@ static void GPIO_WaitKeyPressed(uint32_t gpioMode)
 #ifdef BOARD_GPIO_KEY_CONFIG
     uint32_t i, j, debounce;
 
-    if (GPIO_INTERRUPT == gpioMode)
-    {
-        do
-        {
+    if (GPIO_INTERRUPT == gpioMode){
+        do{
             debounce = 0;
-
-            /* Clear the interrupt state, this operation is necessary, because the GPIO module maybe confuse
-               the first rising edge as interrupt*/
+            /* Clear the interrupt state, this operation is necessary, because the GPIO module maybe confuse the first rising edge as interrupt*/
             GPIO_ClearStatusFlag(BOARD_GPIO_KEY_CONFIG->base, BOARD_GPIO_KEY_CONFIG->pin);
             /* Enable GPIO pin interrupt */
             GPIO_SetPinIntMode(BOARD_GPIO_KEY_CONFIG->base, BOARD_GPIO_KEY_CONFIG->pin, true);
@@ -116,87 +112,54 @@ static void GPIO_WaitKeyPressed(uint32_t gpioMode)
             while(button_pressed_flag == 0);
             button_pressed_flag = 0;
 
-            for (i = 0; i < 3; i++)
-            {
-                /* Delay to wait key value stable. The cycle number should be changed
-                 * according to M4 Core clock frequncy.
-                 */
+            for (i = 0; i < 3; i++){
+                /*Delay according to M4 clock*/
                 for (j = 0 ; j < GPIO_DEBOUNCE_DELAY; j++)
-                {
                     __NOP();
-                }
-
+            
                 if (0 == GPIO_ReadPinInput(BOARD_GPIO_KEY_CONFIG->base, BOARD_GPIO_KEY_CONFIG->pin))
-                {
                     debounce++;
-                }
             }
 
-            if (debounce > 2)
-            {
-                break;
-            }
+            if (debounce > 2) break;
+
         } while (1);
     }
-    else
-    {
+    // GPIO_POLLING
+    else{
         /* Wait for Key Released. */
-        do
-        {
+        do{
             debounce = 0;
             while (0 == GPIO_ReadPinInput(BOARD_GPIO_KEY_CONFIG->base, BOARD_GPIO_KEY_CONFIG->pin));
 
-            for (i = 0; i < 3; i++)
-            {
-                /* Delay to wait key value stable. The cycle number should be changed
-                 * according to M4 Core clock frequncy.
-                 */
+            for (i = 0; i < 3; i++){
+                /*Delay according to M4 clock*/
                 for (j = 0 ; j < GPIO_DEBOUNCE_DELAY; j++)
-                {
                     __NOP();
-                }
 
                 if (1 == GPIO_ReadPinInput(BOARD_GPIO_KEY_CONFIG->base, BOARD_GPIO_KEY_CONFIG->pin))
-                {
                     debounce++;
-                }
             }
 
-            if (debounce > 2)
-            {
-                break;
-            }
-        }
-        while (1);
+            if (debounce > 2) break;
+        }while (1);
 
         /* Wait for Key Pressed. */
-        do
-        {
+        do{
             debounce = 0;
             while (1 == GPIO_ReadPinInput(BOARD_GPIO_KEY_CONFIG->base, BOARD_GPIO_KEY_CONFIG->pin));
 
-            for (i = 0; i < 3; i++)
-            {
-                /* Delay to wait key value stable. The cycle number should be changed
-                 * according to M4 Core clock frequncy.
-                 */
+            for (i = 0; i < 3; i++){
+                /*Delay according to M4 clock*/
                 for (j = 0 ; j < GPIO_DEBOUNCE_DELAY; j++)
-                {
                     __NOP();
-                }
-
+                
                 if (0 == GPIO_ReadPinInput(BOARD_GPIO_KEY_CONFIG->base, BOARD_GPIO_KEY_CONFIG->pin))
-                {
                     debounce++;
-                }
             }
 
-            if (debounce > 2)
-            {
-                break;
-            }
-        }
-        while (1);
+            if (debounce > 2) break;
+        }while (1);
     }
 #else
         GETCHAR();
@@ -250,8 +213,7 @@ int main(void)
     PRINTF("Input any data from terminal 3 times to continues.\n\n\r");
 #endif
     keyPressCount = 0;
-    while(keyPressCount < 3)
-    {
+    while(keyPressCount < 3){
         GPIO_WaitKeyPressed(GPIO_INTERRUPT);
         keyPressCount++;
         PRINTF("Button pressed %d time. \n\r", keyPressCount);
@@ -266,8 +228,7 @@ int main(void)
     PRINTF("\n\r================= GPIO Functionality==================\n\r");
     PRINTF("The button state is now polled.\n\r");
     PRINTF("Press the button to switch LED on or off\n\n\r");
-    while(true)
-    {
+    while(true){
         GPIO_WaitKeyPressed(GPIO_POLLING);
         GPIO_LED_Toggle();
     }

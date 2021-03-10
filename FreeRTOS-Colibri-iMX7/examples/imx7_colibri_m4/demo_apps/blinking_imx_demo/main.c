@@ -92,10 +92,10 @@ int main(void)
     PRINTF("\n\r================= Blinking Demo ==================\n\r");
 
     /* Create a the APP main task. */
-    xTaskCreate(ToggleTask, "Toggle Task", configMINIMAL_STACK_SIZE,
-                NULL, tskIDLE_PRIORITY+1, NULL);
-    xTaskCreate(SwitchTask, "Switch Task", configMINIMAL_STACK_SIZE,
-                NULL, tskIDLE_PRIORITY+2, NULL);
+    xTaskCreate(ToggleTask, "Toggle Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY+1, NULL);
+
+    /* Interrupt Button */
+    xTaskCreate(SwitchTask, "Switch Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY+2, NULL);
 
     /* Start FreeRTOS scheduler. */
     vTaskStartScheduler();
