@@ -1,15 +1,15 @@
 # Creazione di una macchina a stati nel Cortex M4
 ## Funzione per leggere dal canale di comunicazione
 ```c
-    /*
-    *value:     dove salvare il dato letto, 0 se c'è un fail
-    *rx_buf:    buffere rx da dove leggere i dati
-    *app_chnl:  canale di comunicazione
-    Rerurn:
-        0: fail
-        1: seccess
-    */
-    int read_int_from_buffer(int *value, void *rx_buf, struct rpmsg_channel *app_chnl);
+/*
+*value:     dove salvare il dato letto, 0 se c'è un fail
+*rx_buf:    buffere rx da dove leggere i dati
+*app_chnl:  canale di comunicazione
+Rerurn:
+    0: fail
+    1: seccess
+*/
+int read_int_from_buffer(int *value, void *rx_buf, struct rpmsg_channel *app_chnl);
 ```
 - Questa funzione legge l'input dal buffer
 - Attenzione: 
@@ -25,28 +25,28 @@
 - Prima di tutto c'è bisogno di fare queste operazioni
     - In T1:
     ```bash
-        #Spostarsi nella cartella armgcc del proprio progetto
-        #dove è presente il file build_all.sh
-        python3 genera.py 500000 > dati.txt 
-        scp dati.txt root@192.168.11.1:/home/root
-        #Questo basta farlo la prima volta
-        scp loadData.sh root@192.168.11.1:/home/root    
+    #Spostarsi nella cartella armgcc del proprio progetto
+    #dove è presente il file build_all.sh
+    python3 genera.py 500000 > dati.txt 
+    scp dati.txt root@192.168.11.1:/home/root
+    #Questo basta farlo la prima volta
+    scp loadData.sh root@192.168.11.1:/home/root    
     ```
     - In T2:
     ```bash
-        ssh root@192.168.11.1
-        mount #TODO: Trovare cosa scrivere come mount
+    ssh root@192.168.11.1
+    mount #TODO: Trovare cosa scrivere come mount
     ```
     - In T1:
     ```bash
-        ./build_all.sh && scp ./build/*.elf root@192.168.11.1:/media/vf__ #TODO: in che media va caricato ?
+    ./build_all.sh && scp ./build/*.elf root@192.168.11.1:/media/vf__ #TODO: in che media va caricato ?
     ```
     - In T2:
     ```bash
-        unmount #TODO: Il medi da togliere
-        reboot
-        ssh root@192.168.11.1
-        modprobe #TODO: A chi fare il moprobe
+    unmount #TODO: Il medi da togliere
+    reboot
+    ssh root@192.168.11.1
+    modprobe #TODO: A chi fare il moprobe
     ```
 - Se nel bootloader sono stati impostati i parametri giusti vedremo che il modulo si caricherà
 
@@ -54,10 +54,10 @@
 - Dopo che il modulo è partino dobbiamo collegarci alla tty che ha creato
     - In T2:
     ```bash
-       #TODO: Collegamento alla tty
+    #TODO: Collegamento alla tty
 
-        chmod +x loadData.sh
-       ./loadData.sh 0.01 < dati.txt
+    chmod +x loadData.sh
+    ./loadData.sh 0.01 < dati.txt
     ```
 
 

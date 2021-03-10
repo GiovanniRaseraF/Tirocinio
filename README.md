@@ -7,6 +7,9 @@
   - Creazione di un file che documenta come fare a caricare un .elf nell'M4
   - Creazione di un file python per creare dati da dare in pasto alla macchina a stati
   - Creazione di uno script per inviare i diti all'M4
+  - Studio del funzionamento del GPIO interrupt vector e di come viene implementato in c
+  - Studio del funzionamento della lettura di un GPIO da linux
+  - Creazione di un programma in c che legge da GPIO140 e scatena un evento
 
 # 2021 03 09
   - **inizio: 9.00,      fine: 17.30** 
