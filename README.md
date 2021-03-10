@@ -1,8 +1,21 @@
 # Tirocinio
-# 2021 03 09
+
+# 2021 03 10
   - **inizio: 9.00,      fine:** 
+
+# 2021 03 09
+  - **inizio: 9.00,      fine: 17.30** 
+  - Installazione del bootloader
+  - Caricamento con successo del mio bootloader e del sistema operativo
+  - Caricamento di un file compilato da me con armgcc
+  - Comunicazione tra Cortex A7 e M4 tramite una pipe
+  - Creazione di un test da far girare nel M4
+
 # 2021 03 08
   - **inizio: 9.00,      fine: 18.20**
+  - Installazione di un bootloader personalizzato
+  - Installazione di linux personalizzato sulla som
+
 # 2021 03 05        
   - **REMOTO inizio: 9.00,      fine: 18.00**
   - Creazione del Turorial Installazione OS su Colibri iMX7 
