@@ -33,26 +33,6 @@ int gpio_export(unsigned int gpio)
 	return 0;
 }
 
-/****************************************************************
- * gpio_unexport
- ****************************************************************/
-int gpio_unexport(unsigned int gpio)
-{
-	int fd, len;
-	char buf[MAX_BUF];
- 
-	fd = open(SYSFS_GPIO_DIR "/unexport", O_WRONLY);
-	if (fd < 0) {
-		perror("gpio/export");
-		return fd;
-	}
- 
-	len = snprintf(buf, sizeof(buf), "%d", gpio);
-	write(fd, buf, len);
-	close(fd);
-	return 0;
-}
-
 //Setta in read mode 
 int gpio_set_read(unsigned int gpio){
 	int fd, len;
@@ -72,30 +52,6 @@ int gpio_set_read(unsigned int gpio){
 	return 0;
 }
 
-/****************************************************************
- * gpio_set_value
- ****************************************************************/
-int gpio_set_value(unsigned int gpio, unsigned int value)
-{
-	int fd, len;
-	char buf[MAX_BUF];
- 
-	len = snprintf(buf, sizeof(buf), SYSFS_GPIO_DIR "/gpio%d/value", gpio);
- 
-	fd = open(buf, O_WRONLY);
-	if (fd < 0) {
-		perror("gpio/set-value");
-		return fd;
-	}
- 
-	if (value)
-		write(fd, "1", 2);
-	else
-		write(fd, "0", 2);
- 
-	close(fd);
-	return 0;
-}
 
 /****************************************************************
  * gpio_get_value
@@ -200,13 +156,10 @@ int main(int argc, char **argv)
 	gpio_fd = gpio_fd_open(gpio);
 
 	timeout = POLL_TIMEOUT;
- 
+ 	
+	 fdset[0].fd = gpio_fd;
+	fdset[0].events = POLLPRI;
 	while (1) {
-		memset((void*)fdset, 0, sizeof(fdset));
-
-		fdset[0].fd = gpio_fd;
-		fdset[0].events = POLLPRI;
-
 		rc = poll(fdset, nfds, timeout);      
 
 		if (rc < 0) {
