@@ -2,6 +2,11 @@
 
 # 2021 03 10
   - **inizio: 9.00,      fine:** 
+  - Creaizione della macchina a stati e caricamento del elf nell'M4
+  - Testing del codice 
+  - Creazione di un file che documenta come fare a caricare un .elf nell'M4
+  - Creazione di un file python per creare dati da dare in pasto alla macchina a stati
+  - Creazione di uno script per inviare i diti all'M4
 
 # 2021 03 09
   - **inizio: 9.00,      fine: 17.30** 
