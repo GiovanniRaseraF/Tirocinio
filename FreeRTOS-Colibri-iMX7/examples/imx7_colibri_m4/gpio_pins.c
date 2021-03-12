@@ -86,16 +86,17 @@ gpio_init_config_t Led1 = {
  *    107                 EPDC_DATA15           GPIO02_15                  5
  */
 gpio_config_t gpioSwitch2 = {
-    "SODIMM 107",                                      /* name */
-    &IOMUXC_SW_MUX_CTL_PAD_EPDC_DATA15,               /* muxReg */
-    5,                                              /* muxConfig */
-    &IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA15,               /* padReg */
-    IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA15_PS(2)  |        /* padConfig */
+    "SODIMM 107",                                      	/* name */
+	&IOMUXC_SW_MUX_CTL_PAD_EPDC_DATA15,             /* muxReg */
+    5,                                              	/* muxConfig */
+    &IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA15,               	/* padReg */
+    IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA15_PS(2)  |        	/* padConfig */
     	IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA15_PE_MASK |
     IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA15_HYS_MASK,
     GPIO2,                                          /* base */
     15                                              /* pin */
 };
+
 gpio_init_config_t Switch2 = {
     .pin           = 15, //pin number
     .direction     = gpioDigitalInput,
@@ -104,18 +105,18 @@ gpio_init_config_t Switch2 = {
 
 /* LED 2
  * SODIMM                BALL NAME                GPIO                ALT
- *    105                 EPDC_DATA10           GPIO02_10                  5
+ *    105                EPDC_DATA10              GPIO02_10           5
  */
 gpio_config_t gpioLed2 = {
     "SODIMM 105",                                       /* name */
-    &IOMUXC_SW_MUX_CTL_PAD_EPDC_DATA10,               /* muxReg */
-    5,                                              /* muxConfig */
-    &IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA10,                  /* padReg */
-    IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA10_PS(2) |        /* padConfig */
+    &IOMUXC_SW_MUX_CTL_PAD_EPDC_DATA10,               	/* muxReg */
+    5,                                              	/* muxConfig */
+    &IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA10,                 /* padReg */
+    IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA10_PS(2) |        	/* padConfig */
         IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA10_PE_MASK |
 	IOMUXC_SW_PAD_CTL_PAD_EPDC_DATA10_HYS_MASK,
-    GPIO2,                                          /* base */
-    10                                              /* pin */
+    GPIO2,                                          	/* base */
+    10                                              	/* pin */
 };
 
 gpio_init_config_t Led2 = {

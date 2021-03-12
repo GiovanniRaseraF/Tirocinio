@@ -1,7 +1,14 @@
 # Tirocinio
+# 2021 03 11
+  - **inizio: 9.00,      fine:**
+  - 
+  
+# 2021 03 11
+  - **inizio: 9.00,      fine:18.10**
+  - Creazione in un programma per la lettura del GPIO dal M4
 
 # 2021 03 10
-  - **inizio: 9.00,      fine:** 
+  - **inizio: 9.00,      fine:17.40** 
   - Creaizione della macchina a stati e caricamento del elf nell'M4
   - Testing del codice 
   - Creazione di un file che documenta come fare a caricare un .elf nell'M4
