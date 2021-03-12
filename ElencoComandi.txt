@@ -1,0 +1,35 @@
+toradex_2020.07
+git clone -b toradex_2020.07 git://git.toradex.com/u-boot-toradex.git
+git clone -b toradex_5.4-2.3.x-imx git://git.toradex.com/linux-toradex.git
+git clone -b toradex_5.4-2.3.x-imx git://git.toradex.com/device-tree-overlays.git
+
+
+//Probabilmente posso far partire un processo in questo modo
+https://www.toradex.com/community/questions/13527/colibri-imx7-firmware-update.html
+
+fatload mmc 0:1 ${loadaddr} gpio_freertos.elf
+bootaux ${loadaddr}
+
+root@colibri-imx7-emmc:/# mkdir /mnt/vfat_partition                                  
+root@colibri-imx7-emmc:/# mount /dev/mmcblk0p1 /mnt/vfat_partition
+scp hello_world.elf root@192.168.11.1:/mnt/vfat_partition
+scp gpio_freertos.elf root@192.168.11.1:/mnt/vfat_partition
+root@colibri-imx7-emmc:/# umount /mnt/vfat_partition
+
+setenv defargs clk_ignore_unused
+setenv fdt_fixup 'fdt addr ${fdt_addr_r} && fdt rm /soc/aips-bus@30800000/spba-bus@30800000/serial@30890000'
+setenv m4boot 'fatload mmc 0:1 ${loadaddr} gpio_freertos.elf && bootaux ${loadaddr}'
+saveenv
+run emmcboot
+
+modprobe imx_rpmsg_tty 
+stty -F /dev/ttyRPMSG0 -echo
+exec 3<> /dev/ttyRPMSG0
+echo Test >&3
+cat <&3
+.....
+^C
+exec 3>&- 
+
+
+modprobe imx_rpmsg_tty && stty -F /dev/ttyRPMSG0 -echo && exec 3<> /dev/ttyRPMSG0
