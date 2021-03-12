@@ -1,10 +1,13 @@
 ## Tirocinio
 
-# 2021 03 11
+# 2021 03 12
   - **inizio: 9.00,      fine:**
   - Compilazione di un device tree personalizzato
   - Caricamento del device tree nel modulo
   - Flashing del modulo per capire come creare giusto device tree
+  - Creazione con successo di un Custom Device tree che permettesse di dare la priorità di acesso
+  alla gpio5 solamente all'm4
+  - Creazione di un piccolo esempio di accesso alla gpio140
   
 # 2021 03 11
   - **inizio: 9.00,      fine:18.10**
