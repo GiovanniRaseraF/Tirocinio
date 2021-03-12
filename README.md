@@ -1,7 +1,10 @@
-# Tirocinio
+## Tirocinio
+
 # 2021 03 11
   - **inizio: 9.00,      fine:**
-  - 
+  - Compilazione di un device tree personalizzato
+  - Caricamento del device tree nel modulo
+  - Flashing del modulo per capire come creare giusto device tree
   
 # 2021 03 11
   - **inizio: 9.00,      fine:18.10**
