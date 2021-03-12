@@ -148,6 +148,10 @@
 	status = "okay";
 };
 
+&gpio5{
+	status="disabled";
+};
+
 &usbotg1 {
 	extcon = <&extcon_usbc_det>, <&extcon_usbc_det>;
 	vbus-supply = <&reg_usbh_vbus>;
