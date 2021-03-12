@@ -86,8 +86,8 @@
 #define BOARD_GPIO_LED_CONFIG                 (&gpioLed)
 #define BOARD_GPIO_KEY_RDC_PDAP               rdcPdapGpio2
 #define BOARD_GPIO_KEY_CONFIG                 (&gpioKeyFunc1)
-#define BOARD_GPIO_KEY_IRQ_NUM                GPIO2_INT31_16_IRQn
-#define BOARD_GPIO_KEY_HANDLER                GPIO2_INT131_0_Handler
+#define BOARD_GPIO_KEY_IRQ_NUM                GPIO5_INT15_0_IRQn
+#define BOARD_GPIO_KEY_HANDLER                GPIO5_INT15_0_Handler
 
 
 /* Switch 1
