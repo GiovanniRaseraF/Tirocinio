@@ -1,0 +1,20 @@
+12:42:54 **** Build of project hello_world-Debug@debug ****
+/usr/bin/make -j6 all 
+/usr/bin/cmake -H/home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc -B/home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug/CMakeFiles /home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug/CMakeFiles/progress.marks
+/usr/bin/make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug'
+/usr/bin/make -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/depend
+make[2]: Entering directory '/home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug'
+cd /home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc /home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc /home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug /home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug /home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug/CMakeFiles/hello_world.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug'
+/usr/bin/make -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
+make[2]: Entering directory '/home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug'
+make[2]: Nothing to be done for 'CMakeFiles/hello_world.dir/build'.
+make[2]: Leaving directory '/home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug'
+[100%] Built target hello_world
+make[1]: Leaving directory '/home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug'
+/usr/bin/cmake -E cmake_progress_start /home/fdsa/FreeRTOS-Colibri-iMX7/examples/imx7_colibri_m4/demo_apps/hello_world/armgcc/debug/CMakeFiles 0
+
+12:42:54 Build Finished. 0 errors, 0 warnings. (took 125ms)
+

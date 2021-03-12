@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fdsa/Desktop/Tirocinio/2021_03_11/GpioRead/platform/devices/MCIMX7D/startup/gcc/startup_MCIMX7D_M4.S
+
