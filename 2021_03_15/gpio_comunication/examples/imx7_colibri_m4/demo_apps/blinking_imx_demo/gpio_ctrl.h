@@ -1,6 +1,7 @@
 #ifndef __GPIO_CTRL_H__
 #define __GPIO_CTRL_H__
 
+#include "gpio_pins.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -10,10 +11,9 @@ extern "C" {
  */
 void GPIO_Ctrl_Init(void);
 
-/*!
- * @brief Toggle LED on/off status
- */
-void GPIO_Ctrl_ToggleLed(void);
+//Led manipulation
+void GPIO_Ctrl_Led_ON(gpio_config_t *);
+void GPIO_Ctrl_Led_OFF(gpio_config_t *);
 
 /*!
  * @brief Wait user to press key

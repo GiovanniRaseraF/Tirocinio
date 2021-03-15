@@ -25,9 +25,13 @@ extern gpio_config_t gpioKeyFunc_CynexoFrontButton;
 extern gpio_config_t gpioSwitch_CynexoFrontButton;
 extern gpio_init_config_t Switch_CynexoFrontButton;
 
-//Led
+//Led RGB
 extern gpio_config_t gpioLed_CynexoRGBLed_Green;
 extern gpio_init_config_t Led_CynexoRGBLed_Green;
+extern gpio_config_t gpioLed_CynexoRGBLed_Red;
+extern gpio_init_config_t Led_CynexoRGBLed_Red;
+extern gpio_config_t gpioLed_CynexoRGBLed_Blue;
+extern gpio_init_config_t Led_CynexoRGBLed_Blue;
 
 /*! @brief Configure specific GPIO pin */
 void configure_gpio_pin(gpio_config_t *config);

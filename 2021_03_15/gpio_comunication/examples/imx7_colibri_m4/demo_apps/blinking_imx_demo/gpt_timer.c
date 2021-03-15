@@ -15,8 +15,7 @@
 
 static SemaphoreHandle_t xSemaphore;
 
-void Hw_Timer_Init(void)
-{
+void Hw_Timer_Init(void){
     gpt_init_config_t config = {
         .freeRun    = false,
         .waitEnable = true,

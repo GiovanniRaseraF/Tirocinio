@@ -7,6 +7,7 @@
 #include "ccm_imx7d.h"
 #include "clock_freq.h"
 
+
 /* The board name */
 #define BOARD_NAME                            "IMX7_COLIBRI_M4"
 #define BOARD_DOMAIN_ID                       (1)
@@ -51,29 +52,35 @@
 
 /* GPIO information for this board */
 #define BOARD_GPIO_KEY_CCM_CCGR               ccmCcgrGateGpio2
-#define BOARD_GPIO_LED_RDC_PDAP               rdcPdapGpio5
-#define BOARD_GPIO_LED_CONFIG                 (&gpioLed_CynexoRGBLed_Green)
+
+////Cynexo board Specific////
+//RGB led
+#define BOARD_GPIO_LED_RDC_PDAP                 rdcPdapGpio2
+#define BOARD_GPIO_LED_CONFIG                   (&gpioLed_CynexoRGBLed_Green)
+#define BOARD_GPIO_LED_CONFIG_GREEN             (&gpioLed_CynexoRGBLed_Green)
+#define BOARD_GPIO_LED_CONFIG_RED               (&gpioLed_CynexoRGBLed_Red)
+#define BOARD_GPIO_LED_CONFIG_BLUE              (&gpioLed_CynexoRGBLed_Blue)
+
+//Interupt handler
 #define BOARD_GPIO_KEY_RDC_PDAP               rdcPdapGpio2
 #define BOARD_GPIO_KEY_CONFIG                 (&gpioKeyFunc_CynexoFrontButton)
 #define BOARD_GPIO_KEY_IRQ_NUM                GPIO5_INT15_0_IRQn
 #define BOARD_GPIO_KEY_HANDLER                GPIO5_INT15_0_Handler
 
+/* Switch CynexoFrontButton*/
+#define BOARD_GPIO_SWITCH_CynexoFrontButton_RDC_PDAP                rdcPdapGpio2
+#define BOARD_GPIO_SWITCH_CynexoFrontButton_CONFIG                  (&gpioSwitch_CynexoFrontButton)
 
-
-/* Switch CynexoFrontButton
- * SODIMM                BALL NAME                GPIO                ALT
- *    184                SD2_CLK                  GPIO05_12           5
- */
-#define BOARD_GPIO_SWITCH_CynexoFrontButton_RDC_PDAP               rdcPdapGpio2
-#define BOARD_GPIO_SWITCH_CynexoFrontButton_CONFIG                 (&gpioSwitch_CynexoFrontButton)
-
-/* LED CynexoRGBLed_Green
- * SODIMM                BALL NAME                GPIO                ALT
- *    190                SD1_CMD                  GPIO05_04           5
- */
-#define BOARD_GPIO_LED_CynexoRGBLed_Green_RDC_PDAP               rdcPdapGpio2
-#define BOARD_GPIO_LED_CynexoRGBLed_Green_CONFIG                 (&gpioLed_CynexoRGBLed_Green)
-
+/* LED CynexoRGBLed_Green*/
+#define BOARD_GPIO_LED_CynexoRGBLed_Green_RDC_PDAP                  rdcPdapGpio2
+#define BOARD_GPIO_LED_CynexoRGBLed_Green_CONFIG                    (&gpioLed_CynexoRGBLed_Green)
+/* LED CynexoRGBLed_Red*/
+#define BOARD_GPIO_LED_CynexoRGBLed_Red_RDC_PDAP                    rdcPdapGpio2
+#define BOARD_GPIO_LED_CynexoRGBLed_Red_CONFIG                      (&gpioLed_CynexoRGBLed_Red)
+/* LED CynexoRGBLed_Blue*/
+#define BOARD_GPIO_LED_CynexoRGBLed_Blue_RDC_PDAP                   rdcPdapGpio2
+#define BOARD_GPIO_LED_CynexoRGBLed_Blue_CONFIG                     (&gpioLed_CynexoRGBLed_Blue)
+/////////////////////
 
 /* Colibri SPI is ECSPI3 */
 #define BOARD_ECSPI_RDC_PDAP                  rdcPdapEcspi3

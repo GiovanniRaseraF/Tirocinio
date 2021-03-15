@@ -11,6 +11,10 @@
 #define NUM_OF_COLORS	3
 static volatile uint8_t currentColor = GPIO_LED_RED, prevColor = GPIO_LED_BLUE;
 
+//#define BOARD_GPIO_LED_CONFIG_GREEN             (&gpioLed_CynexoRGBLed_Green)
+//#define BOARD_GPIO_LED_CONFIG_RED               (&gpioLed_CynexoRGBLed_Red)
+//#define BOARD_GPIO_LED_CONFIG_BLUE              (&gpioLed_CynexoRGBLed_Blue)
+
 /*
 * Comments: Function to output real color to the led
 */
@@ -22,20 +26,29 @@ void ToggleTask(void *pvParameters){
 			switch(currentColor){
 			case GPIO_LED_RED:
 				PRINTF("\n\rled: RED");
+				GPIO_Ctrl_Led_ON(BOARD_GPIO_LED_CONFIG_RED);
+				GPIO_Ctrl_Led_OFF(BOARD_GPIO_LED_CONFIG_BLUE);
+				GPIO_Ctrl_Led_OFF(BOARD_GPIO_LED_CONFIG_GREEN);
 				break;
 			case GPIO_LED_GREEN:
 				PRINTF("\n\rled: GREEN");
+				GPIO_Ctrl_Led_OFF(BOARD_GPIO_LED_CONFIG_RED);
+				GPIO_Ctrl_Led_OFF(BOARD_GPIO_LED_CONFIG_BLUE);
+				GPIO_Ctrl_Led_ON(BOARD_GPIO_LED_CONFIG_GREEN);
 				break;
 
 			case GPIO_LED_BLUE:
 				PRINTF("\n\rled: BLUE");
+				GPIO_Ctrl_Led_OFF(BOARD_GPIO_LED_CONFIG_RED);
+				GPIO_Ctrl_Led_ON(BOARD_GPIO_LED_CONFIG_BLUE);
+				GPIO_Ctrl_Led_OFF(BOARD_GPIO_LED_CONFIG_GREEN);
 				break;
 			default:
 				PRINTF("\n\rError!!");
 				return;
 				break;
 			}
-
+			
 			prevColor = currentColor;
     	}
 
@@ -43,12 +56,12 @@ void ToggleTask(void *pvParameters){
 }
 
 /*
-* Comments:Funcition to change color info
+* Comments: Funcition to change color info
 */
 void SwitchTask(void *pvParameters){
 	uint8_t numberOfTimes = 0;
 	uint32_t currentTime = 0, prevTime = 0, deltaTime = 0;
-	//Different behavior
+
     while (true){
         //PRINTF("\n\rM4: Press Button, current color: %d\n\r", currentColor);
         GPIO_Ctrl_WaitKeyPressed();
@@ -83,15 +96,13 @@ void SwitchTask(void *pvParameters){
 /*
 * Goal: Create a program thar lissens from a gpio interrupt and blink a let accordingly
 */
-int main(void)
-{
+int main(void){
     /* Initialize board specified hardware. */
     hardware_init();
-
     Hw_Timer_Init();
-    GPIO_Ctrl_Init();
-
-    PRINTF("\n\r================= Giovanni Rasera Demo: 12.28 ==================\n\r");
+    //Log
+    PRINTF("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r================= Giovanni Rasera Demo: 16.31 ==================\n\r");
+	GPIO_Ctrl_Init();
 
     /* Create a the APP main task. */
     xTaskCreate(ToggleTask, "Toggle Task", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY+1, NULL);

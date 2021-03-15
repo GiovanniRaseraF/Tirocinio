@@ -10,7 +10,6 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
-#include "gpio_pins.h"
 #include "board.h"
 #include "gpio_ctrl.h"
 #include "gpio_imx.h"
@@ -20,22 +19,22 @@
 static SemaphoreHandle_t xSemaphore;
 
 static void GPIO_Ctrl_InitLedPin(){
-#ifdef BOARD_GPIO_LED_CONFIG
     gpio_init_config_t ledInit = {
-        .pin           = BOARD_GPIO_LED_CONFIG->pin,
+        .pin           = 0,
         .direction     = gpioDigitalOutput,
         .interruptMode = gpioNoIntmode
     };
 
-    /* Acquire RDC semaphore before access GPIO to avoid conflict, it's
-     * necessary when GPIO RDC is configured as Semaphore Required */
-    //RDC_SEMAPHORE_Lock(BOARD_GPIO_LED_RDC_PDAP);
-
-    GPIO_Init(BOARD_GPIO_LED_CONFIG->base, &ledInit);
-    PRINTF("\n\rConfiguring Led: %s", BOARD_GPIO_LED_CONFIG->name);
-
-    //RDC_SEMAPHORE_Unlock(BOARD_GPIO_LED_RDC_PDAP);
-#endif
+    ledInit.pin = BOARD_GPIO_LED_CONFIG_GREEN->pin;
+    GPIO_Init(BOARD_GPIO_LED_CONFIG_GREEN->base, &ledInit);         //Green
+    ledInit.pin = BOARD_GPIO_LED_CONFIG_RED->pin;
+    GPIO_Init(BOARD_GPIO_LED_CONFIG_RED->base, &ledInit);           //Red
+    ledInit.pin = BOARD_GPIO_LED_CONFIG_BLUE->pin;
+    GPIO_Init(BOARD_GPIO_LED_CONFIG_BLUE->base, &ledInit);          //Blue
+    
+    PRINTF("\n\rConfiguring Led: %s, GPIO02_%d", BOARD_GPIO_LED_CONFIG_GREEN->name, BOARD_GPIO_LED_CONFIG_GREEN->pin);
+    PRINTF("\n\rConfiguring Led: %s, GPIO02_%d", BOARD_GPIO_LED_CONFIG_RED->name, BOARD_GPIO_LED_CONFIG_RED->pin);
+    PRINTF("\n\rConfiguring Led: %s, GPIO02_%d", BOARD_GPIO_LED_CONFIG_BLUE->name, BOARD_GPIO_LED_CONFIG_BLUE->pin);
 }
 
 static void GPIO_Ctrl_InitKeyPin(){
@@ -66,20 +65,14 @@ void GPIO_Ctrl_Init(){
     GPIO_Ctrl_InitKeyPin();
 }
 
-void GPIO_Ctrl_ToggleLed(){
-    static bool on = false;
+//Set the led ON
+void GPIO_Ctrl_Led_ON(gpio_config_t *gpioLed_CynexoRGBLed_Color){
+    GPIO_WritePinOutput(gpioLed_CynexoRGBLed_Color->base, gpioLed_CynexoRGBLed_Color->pin,  gpioPinSet);
+}
 
-#ifdef BOARD_GPIO_LED_CONFIG
-    //RDC_SEMAPHORE_Lock(BOARD_GPIO_LED_RDC_PDAP);
-
-    GPIO_WritePinOutput(BOARD_GPIO_LED_CONFIG->base, BOARD_GPIO_LED_CONFIG->pin, on ? gpioPinSet : gpioPinClear);
-
-    //RDC_SEMAPHORE_Unlock(BOARD_GPIO_LED_RDC_PDAP);
-#else
-    PRINTF("%c ", on ? '+' : '-');
-#endif
-
-    on = !on;
+//Set the led OFF
+void GPIO_Ctrl_Led_OFF(gpio_config_t *gpioLed_CynexoRGBLed_Color){
+    GPIO_WritePinOutput(gpioLed_CynexoRGBLed_Color->base, gpioLed_CynexoRGBLed_Color->pin,  gpioPinClear);
 }
 
 void GPIO_Ctrl_WaitKeyPressed(){
