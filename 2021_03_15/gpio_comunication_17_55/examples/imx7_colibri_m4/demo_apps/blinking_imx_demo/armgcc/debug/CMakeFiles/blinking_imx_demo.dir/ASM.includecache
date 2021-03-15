@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/devices/MCIMX7D/startup/gcc/startup_MCIMX7D_M4.S
+

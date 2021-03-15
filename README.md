@@ -1,7 +1,13 @@
 ## Tirocinio
+# 2021 03 12
+  - **inizio: 9.00,      fine: 18.00**
+  - Creazione di un programma in c che permettesse di leggere da gpio
+    - fare output su dei led RGB
+  - Creazione del file di descrizione delle gpio della scheda Cynexo
+  - Creazine del sistema operativo con python
 
 # 2021 03 12
-  - **inizio: 9.00,      fine:**
+  - **inizio: 9.00,      fine: 17.40**
   - Compilazione di un device tree personalizzato
   - Caricamento del device tree nel modulo
   - Flashing del modulo per capire come creare giusto device tree
