@@ -1,0 +1,524 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "blinking_imx_demo.elf.exe"
+		},
+		{
+			"path" : "blinking_imx_demo.elf.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"TARGET_LINK_LIBRARIES",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 104,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 67,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -mthumb  -Wall  -fno-common  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin  -mapcs  -std=gnu99  -g  -Og  -D__DEBUG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/.."
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../.."
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/CMSIS/Include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/devices"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/devices/MCIMX7D/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/devices/MCIMX7D/startup"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/drivers/inc"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/utilities/inc"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../rtos/FreeRTOS/Source/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../rtos/FreeRTOS/Source/portable/GCC/ARM_CM4F"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -mthumb  -MMD  -MP  -Wall  -fno-common  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin  -mapcs  -std=gnu99  -DCPU_MCIMX7D_M4 /MDd /Zi /Ob0 /Od /RTC1 -g -Og -D__DEBUG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/.."
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../.."
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/CMSIS/Include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/devices"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/devices/MCIMX7D/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/devices/MCIMX7D/startup"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/drivers/inc"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/utilities/inc"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../rtos/FreeRTOS/Source/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../rtos/FreeRTOS/Source/portable/GCC/ARM_CM4F"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28
+			]
+		}
+	],
+	"id" : "blinking_imx_demo::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -mthumb  -MMD  -MP  -Wall  -fno-common  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin  -mapcs  -std=gnu99  -DCPU_MCIMX7D_M4 /MDd /Zi /Ob0 /Od /RTC1 -g -Og -D__DEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 -T MCIMX7D_M4_tcm.ld -static -L C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/armgcc/../../../../../platform/devices/MCIMX7D/linker/gcc/ -mcpu=cortex-m4 -mfloat-abi=hard  -mfpu=fpv4-sp-d16  --specs=nano.specs  -Wall  -fno-common -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin  -mthumb -mapcs  -Xlinker --gc-sections  -Xlinker -static  -Xlinker -z -z max-page-size=32 -Xlinker muldefs -Xlinker --defsym=__stack_size__=0x400  -Xlinker --defsym=__heap_size__=0x200  -Xlinker -Map=blinking_imx_demo.map /debug /INCREMENTAL -g /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-Wl,--start-group",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "m.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "c.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "gcc.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "nosys.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-Wl,--end-group",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "blinking_imx_demo",
+	"nameOnDisk" : "blinking_imx_demo.elf.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/devices/MCIMX7D/startup/gcc/startup_MCIMX7D_M4.S",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/devices/MCIMX7D/startup/system_MCIMX7D_M4.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/drivers/src/ccm_analog_imx7d.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/drivers/src/ccm_imx7d.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/drivers/src/gpio_imx.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/drivers/src/gpt.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/drivers/src/lmem.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/drivers/src/rdc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/drivers/src/rdc_semaphore.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/drivers/src/uart_imx.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/drivers/src/wdog_imx.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/utilities/src/debug_console_imx.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/platform/utilities/src/print_scan.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/rtos/FreeRTOS/Source/croutine.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/rtos/FreeRTOS/Source/event_groups.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/rtos/FreeRTOS/Source/list.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/rtos/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/rtos/FreeRTOS/Source/portable/MemMang/heap_2.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/rtos/FreeRTOS/Source/queue.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/rtos/FreeRTOS/Source/tasks.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/rtos/FreeRTOS/Source/timers.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/board.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/clock_freq.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/gpio_pins.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/pin_mux.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/gpio_ctrl.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/gpt_timer.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/hardware_init.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Users/giovannirasera/eclipse-workspace/gpio_comunication/examples/imx7_colibri_m4/demo_apps/blinking_imx_demo/main.c",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}
