@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "rpmsg_rtos.h": "c",
-        "task.h": "c"
-    }
-}

@@ -1,3 +1,0 @@
-C:/Users/giovannirasera/eclipse-workspace/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/edit_cache.dir
-C:/Users/giovannirasera/eclipse-workspace/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/blinking_imx_demo.dir
-C:/Users/giovannirasera/eclipse-workspace/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/rebuild_cache.dir
