@@ -22,6 +22,7 @@ setenv m4boot 'fatload mmc 0:1 ${loadaddr} gpio_freertos.elf && bootaux ${loadad
 saveenv
 run emmcboot
 
+modprobe imx_rpmsg_tty && stty -F /dev/ttyRPMSG0 -echo && exec 3<> /dev/ttyRPMSG0
 modprobe imx_rpmsg_tty 
 stty -F /dev/ttyRPMSG0 -echo
 exec 3<> /dev/ttyRPMSG0

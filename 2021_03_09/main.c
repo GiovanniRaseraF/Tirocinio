@@ -85,8 +85,7 @@ static void StartStateMachine(void *pvParameters){
 
             key += 1;
 
-            /* Release tx buffer */
-            tx_buf = rpmsg_rtos_alloc_tx_buffer(app_chnl->rp_ept, &size);
+            ,
             if(tx_buf == NULL)
             {
                 PRINTF("\r\n ERROR = rpmsg_rtos_alloc_tx_buffer\r\n");
