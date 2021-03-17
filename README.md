@@ -1,6 +1,6 @@
 ## Tirocinio
 # 2021 03 17
-- **inizio: 9.00,      fine: 17.50**
+- **inizio: 9.00,      fine: 17.30**
 
 # 2021 03 16
   - **inizio: 9.00,      fine: 17.50**
