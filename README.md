@@ -5,6 +5,7 @@
   - fare output su dei led RGB
   - Creazione della comunicazione di log tra m4 e Linux
   - Creazine di un logger in Python
+  - Compilazione di tensorflow per cortex m4
 
 # 2021 03 15
   - **inizio: 9.00,      fine: 18.00**
