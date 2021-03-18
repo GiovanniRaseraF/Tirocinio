@@ -1,6 +1,9 @@
 ## Tirocinio
+# 2021 03 17
+- **inizio: 9.00,      fine: 17.30**
+
 # 2021 03 16
-  - **inizio: 9.00,      fine:**
+  - **inizio: 9.00,      fine: 17.50**
   - Creazione di un programma in c che permettesse di leggere da gpio
   - fare output su dei led RGB
   - Creazione della comunicazione di log tra m4 e Linux
