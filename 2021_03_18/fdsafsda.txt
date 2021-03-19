@@ -1,0 +1,15 @@
+Hi Alex, im answering your questions:
+
+ 1. ***Which U_Boot version do you have on module and how did you try to run an elf file?*** : *Im using U-Boot 2019.07-3.0.4+g26d926eda0*  
+ 2. ***Could you try to compile it to bin ?*** : *The compiler created a .elf and a .bin file, and they do not run* 
+
+
+----------
+This is what i tried: (2 methods)
+
+ 1. **Compile for Mbed Software** : By using this method i created a Mbed Project for the Software to detect  and compile, (like Eclipse .project file). **The problem** is tha when i compile it ask me to specify a TARGET MCU, so my best guess was to search for an MCU with the same Cortex-M4F. in the end i tried all of them and none of them worked.     (Probably for memory areas reasons as you mentioned).
+
+----------
+
+
+ 2. **Compile for cortex_m4_generic** :  With this method i created a file called libtensorflow-microlite.a

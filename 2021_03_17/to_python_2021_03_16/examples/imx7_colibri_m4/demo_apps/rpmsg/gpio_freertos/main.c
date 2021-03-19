@@ -13,12 +13,6 @@
 #include "string.h"
 #include "mu_imx.h"
 #include "rdc_semaphore.h"
-//#include "all_ops_resolver.h"
-#include "tensorflow/lite/micro/micro_error_reporter.h"
-#include "tensorflow/lite/micro/micro_interpreter.h"
-#include "tensorflow/lite/schema/schema_generated.h"
-//#include "version.h"
-//#include "gpt_timer.c"
 #define APP_TASK_STACK_SIZE 256
 
 /*
