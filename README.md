@@ -1,6 +1,17 @@
 ## Tirocinio
+# 2021 03 19
+  - **inizio: 9.00,      fine:**
+  - Installazione delle librerie audio sul modulo
+  - Creazione di un immagine di linux con all'interno le librerie necessarie ad usare l'audio
+
+# 2021 03 18
+  - **inizio: 9.00,      fine: 18.00**
+  - Installazione delle librerie audio sul modulo
+
 # 2021 03 17
-- **inizio: 9.00,      fine: 17.30**
+  - **inizio: 9.00,      fine: 17.30**
+  - Porting di tensorflow su M4
+  - Installazione delle librerie per audio sul modulo
 
 # 2021 03 16
   - **inizio: 9.00,      fine: 17.50**
