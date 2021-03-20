@@ -1,8 +1,11 @@
 ## Tirocinio
 # 2021 03 19
-  - **inizio: 9.00,      fine:**
+  - **inizio: 9.00,      fine: 17.50**
   - Installazione delle librerie audio sul modulo
+  - Creazione di un local.conf per Yocto Project personalizzato
   - Creazione di un immagine di linux con all'interno le librerie necessarie ad usare l'audio
+  - Creazione di uno script in python che precaricasse la traccia audio con conseguente assezza di delay tra la rischiesta di far partire la traccia audio 
+  e l'effettiva riproduzione della stessas
 
 # 2021 03 18
   - **inizio: 9.00,      fine: 18.00**
