@@ -54,7 +54,7 @@
     ```bash
     gedit ./conf/local.conf
     ```
-- Aggiungere questi pacchetti
+- Aggiungere questi pacchetti (Alcuni sono superflui)
     ```bash
     #Licenza per ffmpeg
     LICENSE_FLAGS_WHITELIST="commercial" 

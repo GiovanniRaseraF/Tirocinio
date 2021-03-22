@@ -35,7 +35,7 @@ if __name__ == '__main__':
 	signal.signal(signal.SIGINT, signal_handler)
 
 	#Logging file
-	fileLog = open("~/fileLog.csv", "a")
+	fileLog = open("fileLog.csv", "a")
 
 	device = 'default'
 	opts, args = getopt.getopt(sys.argv[1:], 'd:')
