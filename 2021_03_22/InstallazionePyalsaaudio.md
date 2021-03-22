@@ -95,7 +95,6 @@
     ```bash
     python3 --version
     #Output: 3.8.2
-    touch prova.py
     ```
 - Scrivere nel file questo:
     ```python
@@ -153,7 +152,7 @@
             play(device, f)
     ```
 - La spiegazione del funzionamento è qui:
-    - s
+    - [Funzionamento della libreria]()
 
 
 
