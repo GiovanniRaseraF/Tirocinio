@@ -54,7 +54,7 @@
     ```bash
     gedit ./conf/local.conf
     ```
-- Aggiungere questi pacchetti (Alcuni sono superflui)
+- Aggiungere questi pacchetti (Alcuni sono superflui per testare pyalsaaudio)
     ```bash
     #Licenza per ffmpeg
     LICENSE_FLAGS_WHITELIST="commercial" 
