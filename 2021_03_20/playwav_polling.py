@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-#
-#Author:    Giovanni Rasera Per Cynexo
-#Date:      2021 03 22
-#
 import sys
 import wave
 import getopt
@@ -14,7 +10,12 @@ def play(device, f):
 	device = alsaaudio.PCM()	
 	#Aspetta per farlo partire
 	data = f.readframes(periodsize)			#Prebuffering
-	c = input("Press ANY Key to start:")	#Un interrupt o qualcosa
+	
+	#Polling
+	gpio4_12 = GPIO("/dev/gpiochip4", 12, "in")
+	while(gpio4_12.read() == True):
+		a = None
+	
 	#Leggi e suona
 	while data:
 		device.write(data)

@@ -50,4 +50,3 @@ export CROSS_COMPILE=arm-linux-gnueabihf-
 
 
 5) make imx7d-colibri-eval-v3-cynexo.dtb (lanciarlo dalla cartella arch/arm/boot/dts/)
-
