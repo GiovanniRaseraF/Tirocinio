@@ -153,7 +153,7 @@
             play(device, f)
     ```
 - La spiegazione del funzionamento è qui:
-    - 
+    - s
 
 
 
