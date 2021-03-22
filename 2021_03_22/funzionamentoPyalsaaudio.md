@@ -29,8 +29,8 @@
 - **PREBUFFERING**
     ```python
     #Aspetta per farlo partire
-    data = f.readframes(periodsize)			#Prebuffering
-    c = input("Press ANY Key to start:")	#Un interrupt o qualcosa
+    data = f.readframes(periodsize)         #Prebuffering
+    c = input("Press ANY Key to start:")    #Un interrupt o qualcosa
     ```
 - Leggo e riproduco il file
     ```python
