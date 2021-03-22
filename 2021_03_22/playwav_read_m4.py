@@ -33,15 +33,15 @@ def signal_handler(sig, frame):
 #Main
 if __name__ == '__main__':
 	signal.signal(signal.SIGINT, signal_handler)
-	
-	#Loading driver
-    if os.system("modprobe imx_rpmsg_tty"):
-        print("Problems Loading: imx_rpmsg_tty")
-    else:
-        print("Success Loaded: imx_rpmsg_tty")
 
-    #Logging file
-    fileLog = open("fileLog.csv","a")
+	#Loading driver
+	if os.system("modprobe imx_rpmsg_tty"):
+		print("Problems Loading: imx_rpmsg_tty")
+	else:
+		print("Success Loaded: imx_rpmsg_tty")
+
+	#Logging file
+	fileLog = open("fileLog.csv","a")
 
 	device = 'default'
 	opts, args = getopt.getopt(sys.argv[1:], 'd:')
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 		usage()
 
 	#Listening to the driver
-    ser = serial.Serial('/dev/ttyRPMSG0')
+	ser = serial.Serial('/dev/ttyRPMSG0')
 	f = wave.open(args[0], 'rb')			#Open
 	periodsize = f.getframerate() // 8
 	device = alsaaudio.PCM()	
@@ -63,17 +63,17 @@ if __name__ == '__main__':
 
 	while(True):
 		#Messaggi in entrata da m4
-        line = (ser.readline()).decode('UTF-8')
+		line = (ser.readline()).decode('UTF-8')
 
 		#Play
 		play(data)
 
-        #Estract delta time
-        delta_time = int(line.split(':')[1])
-        current_time = datetime.datetime.now()
-        #Write to file
-        fileLog.write("%s,%s,%d\n" % (current_time, line.strip(), delta_time))
-        fileLog.flush()
+		#Estract delta time
+		delta_time = int(line.split(':')[1])
+		current_time = datetime.datetime.now()
+		#Write to file
+		fileLog.write("%s,%s,%d\n" % (current_time, line.strip(), delta_time))
+		fileLog.flush()
 
     #Close file
     fileLog.close()
