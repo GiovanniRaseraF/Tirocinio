@@ -152,7 +152,7 @@
             play(device, f)
     ```
 - La spiegazione del funzionamento è qui:
-    - [Funzionamento della libreria]()
+    - [Funzionamento della libreria](https://github.com/GiovanniRaseraF/Tirocinio/blob/master/2021_03_22/funzionamentoPyalsaaudio.md)
 
 
 
