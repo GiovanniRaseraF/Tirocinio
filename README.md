@@ -1,4 +1,12 @@
 ## Tirocinio
+# 2021 03 22
+  - **inizio: 10.00,      fine:**
+  - Creazione tutorial di installazione di pyalsaaudio sul modulo
+  - Creazione di uno script di esempio
+
+# 2021 03 20
+  - Messo apposto il programma per la lettura di pyalsaaudio
+
 # 2021 03 19
   - **inizio: 9.00,      fine: 17.50**
   - Installazione delle librerie audio sul modulo
