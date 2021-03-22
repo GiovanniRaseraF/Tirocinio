@@ -26,6 +26,7 @@
     device = alsaaudio.PCM()
     ```
 ## Caricamento dei dati e ***PREBUFFERING***
+- **PREBUFFERING**
     ```python
     #Aspetta per farlo partire
     data = f.readframes(periodsize)			#Prebuffering
