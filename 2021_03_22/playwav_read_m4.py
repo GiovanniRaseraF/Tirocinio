@@ -25,10 +25,10 @@ def usage():
 
 #Ctrl+C
 def signal_handler(sig, frame):
-    print('Stop Ctrl+C!')
-    #Chiudi file
-    fileLog.close()
-    sys.exit(0)
+	print('Stop Ctrl+C!')
+	#Chiudi file
+	fileLog.close()
+	sys.exit(0)
 
 #Main
 if __name__ == '__main__':
