@@ -11,8 +11,8 @@ def play(device, f):
 	#Aspetta per farlo partire
 	data = f.readframes(periodsize)			#Prebuffering
 	c = input("Press ANY Key to start:")	#Un interrupt o qualcosa
+	#Leggi e suona
 	while data:
-		# Read data from stdin
 		device.write(data)
 		data = f.readframes(periodsize)
 
