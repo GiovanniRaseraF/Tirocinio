@@ -29,10 +29,11 @@ def play(device, f):
 
 	periodsize = f.getframerate() // 8
 
-	print('%d channels, %d sampling rate, format %d, periodsize %d\n' % (f.getnchannels(),
-																		 f.getframerate(),
-																		 format,
-																		 periodsize))
+	print('%d channels, %d sampling rate, format %d, periodsize %d\n' % (
+		f.getnchannels(),
+		f.getframerate(),
+		format,
+		periodsize))
 	
 	device = alsaaudio.PCM()
 	
