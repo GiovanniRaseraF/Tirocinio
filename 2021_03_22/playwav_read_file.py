@@ -25,18 +25,18 @@ def usage():
 
 #Ctrl+C
 def signal_handler(sig, frame):
-    print('Stop Ctrl+C!')
-    #Chiudi file
-    fileLog.close()
-    sys.exit(0)
+	print('Stop Ctrl+C!')
+	#Chiudi file
+	fileLog.close()
+	sys.exit(0)
 
 #Main
 if __name__ == '__main__':
 	signal.signal(signal.SIGINT, signal_handler)
-	
+
 	#Logging file
 	fileLog = open("~/fileLog.csv", "a")
-	
+
 	device = 'default'
 	opts, args = getopt.getopt(sys.argv[1:], 'd:')
 	#Cerco un se è specificato un altro device
@@ -62,12 +62,12 @@ if __name__ == '__main__':
 		#Play
 		play(data)
 
-        #Estract delta time
+		#Estract delta time
 		delta_time = int(line.split(':')[1])
 		current_time = datetime.datetime.now()
-        #Write to file
+		#Write to file
 		fileLog.write("%s,%s,%d\n" % (current_time, line.strip(), delta_time))
 		fileLog.flush()
 
-    #Close file
+	#Close file
 	fileLog.close()
