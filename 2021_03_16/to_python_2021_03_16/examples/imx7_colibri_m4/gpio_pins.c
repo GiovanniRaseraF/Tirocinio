@@ -64,7 +64,7 @@ gpio_init_config_t Led_CynexoRGBLed_Green = {
 
 /* LED CynexoRGBLed_Red
  * SODIMM                BALL NAME                GPIO                ALT
- *    134                EPDC_GDOE                GPI02_26            5
+ *    134                EPDC_GDOE                GPI02_25            5
  */
 gpio_config_t gpioLed_CynexoRGBLed_Red = {
     "CynexoRGBLed: Red",                                /* name */

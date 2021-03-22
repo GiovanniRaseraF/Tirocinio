@@ -3,10 +3,11 @@
 ## Il codice di esempio
 - Include  
     ```python
-    from __future__ import print_function
+    #!/usr/bin/env python3
     import sys
     import wave
     import getopt
+    import signal
     import alsaaudio
     ```
 - Indicare il device
@@ -19,34 +20,21 @@
         play(device, f)
     ```
 ## La funzione def play(device, f):
-- Setting del formato del file
+- Velocità di lettura
     ```python
-    format = None
-    # 8bit is unsigned in wav files
-    if f.getsampwidth() == 1:
-        format = alsaaudio.PCM_FORMAT_U8
-    # Otherwise we assume signed data, little endian
-    elif f.getsampwidth() == 2:
-        format = alsaaudio.PCM_FORMAT_S16_LE
-    elif f.getsampwidth() == 3:
-        format = alsaaudio.PCM_FORMAT_S24_3LE
-    elif f.getsampwidth() == 4:
-        format = alsaaudio.PCM_FORMAT_S32_LE
-    else:
-        raise ValueError('Unsupported format')
-    
     periodsize = f.getframerate() // 8
-    ```
-- Caricamento dei dati e del device
-    ```python
     device = alsaaudio.PCM()
-    data = f.readframes(periodsize)
-    c = input("Press ANY Key to start:")
+    ```
+## Caricamento dei dati e ***PREBUFFERING***
+    ```python
+    #Aspetta per farlo partire
+    data = f.readframes(periodsize)			#Prebuffering
+    c = input("Press ANY Key to start:")	#Un interrupt o qualcosa
     ```
 - Leggo e riproduco il file
     ```python
+    #Leggi e Suona
     while data:
-        # Read data from stdin
         device.write(data)
         data = f.readframes(periodsize)
     ```

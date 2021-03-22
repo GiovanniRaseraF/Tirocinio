@@ -98,39 +98,21 @@
     ```
 - Scrivere nel file questo:
     ```python
-    from __future__ import print_function
+    #!/usr/bin/env python3
     import sys
     import wave
     import getopt
+    import signal
     import alsaaudio
 
-    def play(device, f):	
-        format = None
-        # 8bit is unsigned in wav files
-        if f.getsampwidth() == 1:
-            format = alsaaudio.PCM_FORMAT_U8
-        # Otherwise we assume signed data, little endian
-        elif f.getsampwidth() == 2:
-            format = alsaaudio.PCM_FORMAT_S16_LE
-        elif f.getsampwidth() == 3:
-            format = alsaaudio.PCM_FORMAT_S24_3LE
-        elif f.getsampwidth() == 4:
-            format = alsaaudio.PCM_FORMAT_S32_LE
-        else:
-            raise ValueError('Unsupported format')
-
+    def play(device, f):
         periodsize = f.getframerate() // 8
-        print('%d channels, %d sampling rate, format %d, periodsize %d\n' % (
-            f.getnchannels(),
-            f.getframerate(),
-            format,
-            periodsize))
-        
-        device = alsaaudio.PCM()
-        data = f.readframes(periodsize)
-        c = input("Press ANY Key to start:")
+        device = alsaaudio.PCM()	
+        #Aspetta per farlo partire
+        data = f.readframes(periodsize)			#Prebuffering
+        c = input("Press ANY Key to start:")	#Un interrupt o qualcosa
+        #Leggi e Suona
         while data:
-            # Read data from stdin
             device.write(data)
             data = f.readframes(periodsize)
 
@@ -138,16 +120,25 @@
         print('usage: playwav.py [-d <device>] <file>', file=sys.stderr)
         sys.exit(2)
 
+    #Ctrl+C
+    def signal_handler(sig, frame):
+        print('Stop: Ctrl+C!')
+        sys.exit(0)
+
+    #Main
     if __name__ == '__main__':
+        signal.signal(signal.SIGINT, signal_handler)
         device = 'default'
         opts, args = getopt.getopt(sys.argv[1:], 'd:')
+        #Cerco un se è specificato un altro device NON CI SERVE
         for o, a in opts:
             if o == '-d':
                 device = a
-
+        #Come usare
         if not args:
             usage()
-            
+
+        #Read only mode
         with wave.open(args[0], 'rb') as f:
             play(device, f)
     ```
