@@ -1,0 +1,11 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "gpio_pins.h": "c",
+        "board.h": "c",
+        "pin_mux.h": "c",
+        "semphr.h": "c",
+        "mu_imx.h": "c",
+        "gpt.h": "c"
+    }
+}
