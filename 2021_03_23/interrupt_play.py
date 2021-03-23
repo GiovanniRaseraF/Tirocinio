@@ -75,10 +75,10 @@ class InterruptButton(threading.Thread):
 class RGBCicle(threading.Thread):
 	def __init__(self, threadID, name, board):
 		threading.Thread.__init__(self)
-		self.gpio_green = board.gpio_green
-		self.gpio_red 	= board.gpio_red
-		self.gpio_blue 	= board.gpio_blue	
-		self.threadID 	= threadID
+		self.gpio_green	= board.gpio_green
+		self.gpio_red	= board.gpio_red
+		self.gpio_blue	= board.gpio_blue	
+		self.threadID	= threadID
 		self.name		= name
 	
 	def run(self):
