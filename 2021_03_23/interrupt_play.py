@@ -30,7 +30,7 @@ class CynexoGPIO():
 		self.gpio_green.close()
 		self.gpio_red.close()
 		self.gpio_blue.close()
-		
+
 Cy_Board = CynexoGPIO()
 
 #Ctrl+C
@@ -108,11 +108,6 @@ if __name__ == '__main__':
 	device = 'default'
 	opts, args = getopt.getopt(sys.argv[1:], 'd:')
 
-	#Cerco un se è specificato un altro device
-	for o, a in opts:
-		if o == '-d':
-			device = a
-	
 	#Come usare
 	if not args:
 		usage()
