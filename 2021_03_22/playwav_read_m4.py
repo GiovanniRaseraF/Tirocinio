@@ -13,7 +13,7 @@ import getopt
 import alsaaudio
 fileLog = None
 
-def play(data):
+def play(data, periodsize):
 	#Leggi e suona
 	while data:
 		device.write(data)
@@ -66,7 +66,7 @@ if __name__ == '__main__':
 		line = (ser.readline()).decode('UTF-8')
 
 		#Play
-		play(data)
+		play(data, periodsize)
 
 		#Estract delta time
 		delta_time = int(line.split(':')[1])
