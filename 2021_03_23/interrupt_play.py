@@ -13,23 +13,42 @@ import threading
 import time
 sig_control_c = False
 
+#GPIO Specifico della scheda Cynexo
+class CynexoGPIO():
+	def __init__(self):
+		self.gpio_FBtn 		= GPIO("/dev/gpiochip4", 12, "in")
+		self.gpio_FBtn.edge = "falling"
+		self.gpio_green 	= GPIO("/dev/gpiochip1", 24, "out")
+		self.gpio_red 		= GPIO("/dev/gpiochip1", 25, "out")
+		self.gpio_blue 		= GPIO("/dev/gpiochip2", 23, "out")
+	
+	def close(self):
+		self.gpio_green.write(False)
+		self.gpio_red.write(False)
+		self.gpio_blue.write(False)
+		self.gpio_FBtn.close()
+		self.gpio_green.close()
+		self.gpio_red.close()
+		self.gpio_blue.close()
+		
+Cy_Board = CynexoGPIO()
+
 #Ctrl+C
 def signal_handler(sig, frame):
 	print('Stop: Ctrl+C!')
-	global sig_control_c 
-	sig_control_c = True
+	#Chiudere la Scheda e ritornare le risorse al sistema
+	Cy_Board.close()
 	sys.exit(0)
 
 signal.signal(signal.SIGINT, signal_handler)
 
 #Interrut per far partire la musica
 class InterruptButton(threading.Thread):
-	def __init__(self, threadID, name):
+	def __init__(self, threadID, name, board):
 		threading.Thread.__init__(self)
-		self.gpio_CynexoFrontButton = GPIO("/dev/gpiochip4", 12, "in")
-		self.gpio_CynexoFrontButton.edge = "falling"
-		self.threadID = threadID
-		self.name = name
+		self.button 	= board.gpio_FBtn
+		self.threadID 	= threadID
+		self.name 		= name
 
 	def play(self, data, periodsize, device, f):
 		#Leggi e suona
@@ -46,7 +65,7 @@ class InterruptButton(threading.Thread):
 			data = f.readframes(periodsize)
 			#Interrupt
 			print("Interrupt Button:")
-			self.gpio_CynexoFrontButton.read_event() 	
+			self.button.read_event() 	
 			#Play
 			self.play(data, periodsize, device, f)
 
@@ -55,13 +74,13 @@ class InterruptButton(threading.Thread):
 
 #RGB
 class RGBCicle(threading.Thread):
-	def __init__(self, threadID, name):
+	def __init__(self, threadID, name, board):
 		threading.Thread.__init__(self)
-		self.gpio_green 	= GPIO("/dev/gpiochip1", 24, "out")
-		self.gpio_red 		= GPIO("/dev/gpiochip1", 25, "out")
-		self.gpio_blue 		= GPIO("/dev/gpiochip2", 23, "out")
-		self.threadID = threadID
-		self.name = name
+		self.gpio_green = board.gpio_green
+		self.gpio_red 	= board.gpio_red
+		self.gpio_blue 	= board.gpio_blue	
+		self.threadID 	= threadID
+		self.name 		= name
 	
 	def run(self):
 		while(True):
@@ -99,8 +118,8 @@ if __name__ == '__main__':
 		usage()
 
 	#Threading
-	threadButton 	= InterruptButton(1, "Interrupt Button")
-	threadOther 	= RGBCicle(2, "RGB")
+	threadButton 	= InterruptButton(1, "Interrupt Button", Cy_Board)
+	threadOther 	= RGBCicle(2, "RGB", Cy_Board)
 
 	threadButton.start()
 	threadOther.start()
