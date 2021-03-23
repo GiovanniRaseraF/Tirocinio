@@ -1,6 +1,10 @@
 ## Tirocinio
+# 2021 03 23
+  - **inizio: 9.00,      fine:**
+  - Creazione di script per lettura di interrupt da gpio e utilizzo di threading
+
 # 2021 03 22
-  - **inizio: 10.00,      fine:**
+  - **inizio: 10.00,      fine:18.40**
   - Creazione tutorial di installazione di pyalsaaudio sul modulo
   - Creazione di uno script di esempio
 
