@@ -11,16 +11,15 @@ import signal
 import alsaaudio
 import threading
 import time
-sig_control_c = False
 
 #GPIO Specifico della scheda Cynexo
 class CynexoGPIO():
 	def __init__(self):
-		self.gpio_FBtn 		= GPIO("/dev/gpiochip4", 12, "in")
-		self.gpio_FBtn.edge = "falling"
-		self.gpio_green 	= GPIO("/dev/gpiochip1", 24, "out")
-		self.gpio_red 		= GPIO("/dev/gpiochip1", 25, "out")
-		self.gpio_blue 		= GPIO("/dev/gpiochip2", 23, "out")
+		self.gpio_FBtn		= GPIO("/dev/gpiochip4", 12, "in")
+		self.gpio_FBtn.edge	= "falling"
+		self.gpio_green		= GPIO("/dev/gpiochip1", 24, "out")
+		self.gpio_red		= GPIO("/dev/gpiochip1", 25, "out")
+		self.gpio_blue		= GPIO("/dev/gpiochip2", 23, "out")
 	
 	def close(self):
 		self.gpio_green.write(False)
@@ -48,7 +47,7 @@ class InterruptButton(threading.Thread):
 		threading.Thread.__init__(self)
 		self.button 	= board.gpio_FBtn
 		self.threadID 	= threadID
-		self.name 		= name
+		self.name		= name
 
 	def play(self, data, periodsize, device, f):
 		#Leggi e suona
@@ -80,7 +79,7 @@ class RGBCicle(threading.Thread):
 		self.gpio_red 	= board.gpio_red
 		self.gpio_blue 	= board.gpio_blue	
 		self.threadID 	= threadID
-		self.name 		= name
+		self.name		= name
 	
 	def run(self):
 		while(True):
@@ -99,7 +98,7 @@ class RGBCicle(threading.Thread):
 			
 
 def usage():
-	print('usage: playwav.py [-d <device>] <file>', file=sys.stderr)
+	print('usage: playwav.py  <file>', file=sys.stderr)
 	sys.exit(2)
 
 
