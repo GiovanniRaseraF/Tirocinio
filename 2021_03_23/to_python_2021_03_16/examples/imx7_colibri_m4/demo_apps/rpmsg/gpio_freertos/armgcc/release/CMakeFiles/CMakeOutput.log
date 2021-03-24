@@ -29,10 +29,10 @@ The CXX compiler identification is GNU, found in "C:/Users/giovannirasera/source
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_23/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_b9a0e/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b9a0e.dir\build.make CMakeFiles/cmTC_b9a0e.dir/build
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_56fff/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_56fff.dir\build.make CMakeFiles/cmTC_56fff.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_23/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b9a0e.dir/CMakeCCompilerABI.c.obj
-C:\MinGW\bin\bin\arm-none-eabi-gcc.exe   --specs=nosys.specs   -O3    -v -o CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj -c "C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c"
+Building C object CMakeFiles/cmTC_56fff.dir/CMakeCCompilerABI.c.obj
+C:\MinGW\bin\bin\arm-none-eabi-gcc.exe   --specs=nosys.specs   -O3    -v -o CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj -c "C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c"
 Using built-in specs.
 Reading specs from c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/nosys.specs
 rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
@@ -42,8 +42,8 @@ Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipelin
 Thread model: single
 Supported LTO compression algorithms: zlib
 gcc version 10.2.1 20201103 (release) (GNU Arm Embedded Toolchain 10-2020-q4-major) 
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
- c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1.exe -quiet -v -iprefix c:\mingw\bin\bin\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\mingw\bin\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj -O3 -version -o C:\Users\GIOVAN~1\AppData\Local\Temp\ccqeLBIs.s
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1.exe -quiet -v -iprefix c:\mingw\bin\bin\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\mingw\bin\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj -O3 -version -o C:\Users\GIOVAN~1\AppData\Local\Temp\ccHr4FCv.s
 GNU C17 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (release) (arm-none-eabi)
 	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
@@ -64,15 +64,15 @@ GNU C17 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (r
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: d0af1807fcd872df6b1165770acff16d
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
- c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj C:\Users\GIOVAN~1\AppData\Local\Temp\ccqeLBIs.s
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj C:\Users\GIOVAN~1\AppData\Local\Temp\ccHr4FCv.s
 GNU assembler version 2.35.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10-2020-q4-major) 2.35.1.20201028
 COMPILER_PATH=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/mingw/bin/bin/../lib/gcc/;c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/
 LIBRARY_PATH=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/mingw/bin/bin/../lib/gcc/;c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/;c:/mingw/bin/bin/../arm-none-eabi/lib/
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
-Linking C executable cmTC_b9a0e
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b9a0e.dir\link.txt --verbose=1
-C:\MinGW\bin\bin\arm-none-eabi-gcc.exe --specs=nosys.specs   -O3   -v CMakeFiles/cmTC_b9a0e.dir/CMakeCCompilerABI.c.obj -o cmTC_b9a0e 
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+Linking C executable cmTC_56fff
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_56fff.dir\link.txt --verbose=1
+C:\MinGW\bin\bin\arm-none-eabi-gcc.exe --specs=nosys.specs   -O3   -v CMakeFiles/cmTC_56fff.dir/CMakeCCompilerABI.c.obj -o cmTC_56fff 
 Using built-in specs.
 Reading specs from c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/nosys.specs
 rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
@@ -85,9 +85,9 @@ Supported LTO compression algorithms: zlib
 gcc version 10.2.1 20201103 (release) (GNU Arm Embedded Toolchain 10-2020-q4-major) 
 COMPILER_PATH=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/mingw/bin/bin/../lib/gcc/;c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/
 LIBRARY_PATH=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/mingw/bin/bin/../lib/gcc/;c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/;c:/mingw/bin/bin/../arm-none-eabi/lib/
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_b9a0e' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
- c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/collect2.exe -plugin c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\ccIb59Qy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\mingw\bin\bin\../arm-none-eabi -X -o cmTC_b9a0e c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crti.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtbegin.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1 -Lc:/mingw/bin/bin/../lib/gcc -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib -Lc:/mingw/bin/bin/../arm-none-eabi/lib CMakeFiles/cmTC_b9a0e.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtend.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtn.o
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_b9a0e' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_56fff' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/collect2.exe -plugin c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\cclu2oQC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\mingw\bin\bin\../arm-none-eabi -X -o cmTC_56fff c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crti.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtbegin.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1 -Lc:/mingw/bin/bin/../lib/gcc -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib -Lc:/mingw/bin/bin/../arm-none-eabi/lib CMakeFiles/cmTC_56fff.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtend.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtn.o
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_56fff' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
 mingw32-make.exe[1]: Leaving directory 'C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_23/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/CMakeTmp'
 
 
@@ -109,10 +109,10 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_23/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_b9a0e/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b9a0e.dir\build.make CMakeFiles/cmTC_b9a0e.dir/build]
+  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_56fff/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_56fff.dir\build.make CMakeFiles/cmTC_56fff.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_23/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_b9a0e.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\MinGW\bin\bin\arm-none-eabi-gcc.exe   --specs=nosys.specs   -O3    -v -o CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj -c "C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Building C object CMakeFiles/cmTC_56fff.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\MinGW\bin\bin\arm-none-eabi-gcc.exe   --specs=nosys.specs   -O3    -v -o CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj -c "C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c"]
   ignore line: [Using built-in specs.]
   ignore line: [Reading specs from c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/nosys.specs]
   ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
@@ -122,8 +122,8 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: single]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 10.2.1 20201103 (release) (GNU Arm Embedded Toolchain 10-2020-q4-major) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1.exe -quiet -v -iprefix c:\mingw\bin\bin\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\mingw\bin\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj -O3 -version -o C:\Users\GIOVAN~1\AppData\Local\Temp\ccqeLBIs.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1.exe -quiet -v -iprefix c:\mingw\bin\bin\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\mingw\bin\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj -O3 -version -o C:\Users\GIOVAN~1\AppData\Local\Temp\ccHr4FCv.s]
   ignore line: [GNU C17 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (release) (arm-none-eabi)]
   ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
   ignore line: []
@@ -144,8 +144,8 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: d0af1807fcd872df6b1165770acff16d]
-  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj C:\Users\GIOVAN~1\AppData\Local\Temp\ccqeLBIs.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj C:\Users\GIOVAN~1\AppData\Local\Temp\ccHr4FCv.s]
   ignore line: [GNU assembler version 2.35.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10-2020-q4-major) 2.35.1.20201028]
   ignore line: [COMPILER_PATH=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/]
   ignore line: [c:/mingw/bin/bin/../lib/gcc/]
@@ -154,10 +154,10 @@ Parsed C implicit link information from above output:
   ignore line: [c:/mingw/bin/bin/../lib/gcc/]
   ignore line: [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/]
   ignore line: [c:/mingw/bin/bin/../arm-none-eabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_b9a0e.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [Linking C executable cmTC_b9a0e]
-  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b9a0e.dir\link.txt --verbose=1]
-  ignore line: [C:\MinGW\bin\bin\arm-none-eabi-gcc.exe --specs=nosys.specs   -O3   -v CMakeFiles/cmTC_b9a0e.dir/CMakeCCompilerABI.c.obj -o cmTC_b9a0e ]
+  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_56fff.dir\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [Linking C executable cmTC_56fff]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_56fff.dir\link.txt --verbose=1]
+  ignore line: [C:\MinGW\bin\bin\arm-none-eabi-gcc.exe --specs=nosys.specs   -O3   -v CMakeFiles/cmTC_56fff.dir/CMakeCCompilerABI.c.obj -o cmTC_56fff ]
   ignore line: [Using built-in specs.]
   ignore line: [Reading specs from c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/nosys.specs]
   ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
@@ -175,13 +175,13 @@ Parsed C implicit link information from above output:
   ignore line: [c:/mingw/bin/bin/../lib/gcc/]
   ignore line: [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/]
   ignore line: [c:/mingw/bin/bin/../arm-none-eabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_b9a0e' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  link line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/collect2.exe -plugin c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\ccIb59Qy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\mingw\bin\bin\../arm-none-eabi -X -o cmTC_b9a0e c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crti.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtbegin.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1 -Lc:/mingw/bin/bin/../lib/gcc -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib -Lc:/mingw/bin/bin/../arm-none-eabi/lib CMakeFiles/cmTC_b9a0e.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtend.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_56fff' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  link line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/collect2.exe -plugin c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\cclu2oQC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\mingw\bin\bin\../arm-none-eabi -X -o cmTC_56fff c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crti.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtbegin.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1 -Lc:/mingw/bin/bin/../lib/gcc -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib -Lc:/mingw/bin/bin/../arm-none-eabi/lib CMakeFiles/cmTC_56fff.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtend.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtn.o]
     arg [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\ccIb59Qy.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\cclu2oQC.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -190,7 +190,7 @@ Parsed C implicit link information from above output:
     arg [--sysroot=c:\mingw\bin\bin\../arm-none-eabi] ==> ignore
     arg [-X] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_b9a0e] ==> ignore
+    arg [cmTC_56fff] ==> ignore
     arg [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crti.o] ==> ignore
     arg [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtbegin.o] ==> ignore
     arg [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/crt0.o] ==> ignore
@@ -198,7 +198,7 @@ Parsed C implicit link information from above output:
     arg [-Lc:/mingw/bin/bin/../lib/gcc] ==> dir [c:/mingw/bin/bin/../lib/gcc]
     arg [-Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib] ==> dir [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib]
     arg [-Lc:/mingw/bin/bin/../arm-none-eabi/lib] ==> dir [c:/mingw/bin/bin/../arm-none-eabi/lib]
-    arg [CMakeFiles/cmTC_b9a0e.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_56fff.dir/CMakeCCompilerABI.c.obj] ==> ignore
     arg [--start-group] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lc] ==> lib [c]
@@ -222,10 +222,10 @@ Parsed C implicit link information from above output:
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_23/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_94536/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_94536.dir\build.make CMakeFiles/cmTC_94536.dir/build
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_cdbbf/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_cdbbf.dir\build.make CMakeFiles/cmTC_cdbbf.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_23/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_94536.dir/CMakeCXXCompilerABI.cpp.obj
-C:\MinGW\bin\bin\arm-none-eabi-g++.exe   --specs=nosys.specs   -O3    -v -o CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp"
+Building CXX object CMakeFiles/cmTC_cdbbf.dir/CMakeCXXCompilerABI.cpp.obj
+C:\MinGW\bin\bin\arm-none-eabi-g++.exe   --specs=nosys.specs   -O3    -v -o CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp"
 Using built-in specs.
 Reading specs from c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/nosys.specs
 rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
@@ -235,8 +235,8 @@ Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipelin
 Thread model: single
 Supported LTO compression algorithms: zlib
 gcc version 10.2.1 20201103 (release) (GNU Arm Embedded Toolchain 10-2020-q4-major) 
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
- c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1plus.exe -quiet -v -iprefix c:\mingw\bin\bin\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\mingw\bin\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj -O3 -version -o C:\Users\GIOVAN~1\AppData\Local\Temp\cc6NnUqM.s
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1plus.exe -quiet -v -iprefix c:\mingw\bin\bin\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\mingw\bin\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj -O3 -version -o C:\Users\GIOVAN~1\AppData\Local\Temp\cc15YkGU.s
 GNU C++14 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (release) (arm-none-eabi)
 	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
 
@@ -263,15 +263,15 @@ GNU C++14 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: a4fe51cc32557f05b9d40da079bbd1f1
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
- c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\GIOVAN~1\AppData\Local\Temp\cc6NnUqM.s
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\GIOVAN~1\AppData\Local\Temp\cc15YkGU.s
 GNU assembler version 2.35.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10-2020-q4-major) 2.35.1.20201028
 COMPILER_PATH=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/mingw/bin/bin/../lib/gcc/;c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/
 LIBRARY_PATH=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/mingw/bin/bin/../lib/gcc/;c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/;c:/mingw/bin/bin/../arm-none-eabi/lib/
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
-Linking CXX executable cmTC_94536
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_94536.dir\link.txt --verbose=1
-C:\MinGW\bin\bin\arm-none-eabi-g++.exe --specs=nosys.specs   -O3   -v CMakeFiles/cmTC_94536.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_94536 
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+Linking CXX executable cmTC_cdbbf
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_cdbbf.dir\link.txt --verbose=1
+C:\MinGW\bin\bin\arm-none-eabi-g++.exe --specs=nosys.specs   -O3   -v CMakeFiles/cmTC_cdbbf.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_cdbbf 
 Using built-in specs.
 Reading specs from c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/nosys.specs
 rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
@@ -284,9 +284,9 @@ Supported LTO compression algorithms: zlib
 gcc version 10.2.1 20201103 (release) (GNU Arm Embedded Toolchain 10-2020-q4-major) 
 COMPILER_PATH=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/mingw/bin/bin/../lib/gcc/;c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/
 LIBRARY_PATH=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/mingw/bin/bin/../lib/gcc/;c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/;c:/mingw/bin/bin/../arm-none-eabi/lib/
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_94536' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
- c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/collect2.exe -plugin c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\cciWbQyT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\mingw\bin\bin\../arm-none-eabi -X -o cmTC_94536 c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crti.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtbegin.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1 -Lc:/mingw/bin/bin/../lib/gcc -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib -Lc:/mingw/bin/bin/../arm-none-eabi/lib CMakeFiles/cmTC_94536.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtend.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtn.o
-COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_94536' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_cdbbf' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
+ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/collect2.exe -plugin c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\ccVQAkQ1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\mingw\bin\bin\../arm-none-eabi -X -o cmTC_cdbbf c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crti.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtbegin.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1 -Lc:/mingw/bin/bin/../lib/gcc -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib -Lc:/mingw/bin/bin/../arm-none-eabi/lib CMakeFiles/cmTC_cdbbf.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtend.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtn.o
+COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_cdbbf' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t'
 mingw32-make.exe[1]: Leaving directory 'C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_23/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/CMakeTmp'
 
 
@@ -314,10 +314,10 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_23/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_94536/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_94536.dir\build.make CMakeFiles/cmTC_94536.dir/build]
+  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_cdbbf/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_cdbbf.dir\build.make CMakeFiles/cmTC_cdbbf.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_23/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/release/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_94536.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\MinGW\bin\bin\arm-none-eabi-g++.exe   --specs=nosys.specs   -O3    -v -o CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Building CXX object CMakeFiles/cmTC_cdbbf.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\MinGW\bin\bin\arm-none-eabi-g++.exe   --specs=nosys.specs   -O3    -v -o CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp"]
   ignore line: [Using built-in specs.]
   ignore line: [Reading specs from c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/nosys.specs]
   ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
@@ -327,8 +327,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: single]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 10.2.1 20201103 (release) (GNU Arm Embedded Toolchain 10-2020-q4-major) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1plus.exe -quiet -v -iprefix c:\mingw\bin\bin\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\mingw\bin\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj -O3 -version -o C:\Users\GIOVAN~1\AppData\Local\Temp\cc6NnUqM.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1plus.exe -quiet -v -iprefix c:\mingw\bin\bin\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\mingw\bin\bin\../arm-none-eabi -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -march=armv4t -auxbase-strip CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj -O3 -version -o C:\Users\GIOVAN~1\AppData\Local\Temp\cc15YkGU.s]
   ignore line: [GNU C++14 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (release) (arm-none-eabi)]
   ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
   ignore line: []
@@ -355,8 +355,8 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: a4fe51cc32557f05b9d40da079bbd1f1]
-  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\GIOVAN~1\AppData\Local\Temp\cc6NnUqM.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\GIOVAN~1\AppData\Local\Temp\cc15YkGU.s]
   ignore line: [GNU assembler version 2.35.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10-2020-q4-major) 2.35.1.20201028]
   ignore line: [COMPILER_PATH=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/]
   ignore line: [c:/mingw/bin/bin/../lib/gcc/]
@@ -365,10 +365,10 @@ Parsed CXX implicit link information from above output:
   ignore line: [c:/mingw/bin/bin/../lib/gcc/]
   ignore line: [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/]
   ignore line: [c:/mingw/bin/bin/../arm-none-eabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_94536.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  ignore line: [Linking CXX executable cmTC_94536]
-  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_94536.dir\link.txt --verbose=1]
-  ignore line: [C:\MinGW\bin\bin\arm-none-eabi-g++.exe --specs=nosys.specs   -O3   -v CMakeFiles/cmTC_94536.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_94536 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'CMakeFiles\cmTC_cdbbf.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  ignore line: [Linking CXX executable cmTC_cdbbf]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_cdbbf.dir\link.txt --verbose=1]
+  ignore line: [C:\MinGW\bin\bin\arm-none-eabi-g++.exe --specs=nosys.specs   -O3   -v CMakeFiles/cmTC_cdbbf.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_cdbbf ]
   ignore line: [Using built-in specs.]
   ignore line: [Reading specs from c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/nosys.specs]
   ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
@@ -386,13 +386,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [c:/mingw/bin/bin/../lib/gcc/]
   ignore line: [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/]
   ignore line: [c:/mingw/bin/bin/../arm-none-eabi/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_94536' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
-  link line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/collect2.exe -plugin c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\cciWbQyT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\mingw\bin\bin\../arm-none-eabi -X -o cmTC_94536 c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crti.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtbegin.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1 -Lc:/mingw/bin/bin/../lib/gcc -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib -Lc:/mingw/bin/bin/../arm-none-eabi/lib CMakeFiles/cmTC_94536.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtend.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-specs=nosys.specs' '-O3' '-v' '-o' 'cmTC_cdbbf' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-march=armv4t']
+  link line: [ c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/collect2.exe -plugin c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\ccVQAkQ1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys --sysroot=c:\mingw\bin\bin\../arm-none-eabi -X -o cmTC_cdbbf c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crti.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtbegin.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/crt0.o -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1 -Lc:/mingw/bin/bin/../lib/gcc -Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib -Lc:/mingw/bin/bin/../arm-none-eabi/lib CMakeFiles/cmTC_cdbbf.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm --start-group -lgcc -lc --end-group --start-group -lgcc -lc -lnosys --end-group c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtend.o c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtn.o]
     arg [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\cciWbQyT.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\GIOVAN~1\AppData\Local\Temp\ccVQAkQ1.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -401,7 +401,7 @@ Parsed CXX implicit link information from above output:
     arg [--sysroot=c:\mingw\bin\bin\../arm-none-eabi] ==> ignore
     arg [-X] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_94536] ==> ignore
+    arg [cmTC_cdbbf] ==> ignore
     arg [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crti.o] ==> ignore
     arg [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/crtbegin.o] ==> ignore
     arg [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/crt0.o] ==> ignore
@@ -409,7 +409,7 @@ Parsed CXX implicit link information from above output:
     arg [-Lc:/mingw/bin/bin/../lib/gcc] ==> dir [c:/mingw/bin/bin/../lib/gcc]
     arg [-Lc:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib] ==> dir [c:/mingw/bin/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib]
     arg [-Lc:/mingw/bin/bin/../arm-none-eabi/lib] ==> dir [c:/mingw/bin/bin/../arm-none-eabi/lib]
-    arg [CMakeFiles/cmTC_94536.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [CMakeFiles/cmTC_cdbbf.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [--start-group] ==> ignore
