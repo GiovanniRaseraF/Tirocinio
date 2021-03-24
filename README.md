@@ -1,6 +1,11 @@
 ## Tirocinio
-# 2021 03 23
+# 2021 03 24
   - **inizio: 9.00,      fine:**
+  - Testing del caricamento di file .elf dal bootloader di imx7
+  - Installazione di scipy su Yocto project insieme a pyalsaaudio
+
+# 2021 03 23
+  - **inizio: 9.00,      fine: 17.30**
   - Creazione di script per lettura di interrupt da gpio e utilizzo di threading
 
 # 2021 03 22

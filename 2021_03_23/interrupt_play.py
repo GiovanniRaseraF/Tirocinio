@@ -2,6 +2,9 @@
 #
 #Author:    Giovanni Rasera Per Cynexo
 #Date:      2021 03 22
+#Behavior:	Lo script crea due thread 
+#				1 - Ascolta in interrupt la GPIO del bottone per far partire un suono
+#				2 - Fa illuminare dei led a ciclo
 #
 from periphery import GPIO
 import sys
