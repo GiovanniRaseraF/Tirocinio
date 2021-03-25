@@ -1,10 +1,10 @@
 ## Tirocinio
-# 2021 03 24
-  - **inizio: 9.00,      fine:17.50**
-  - Bitbake dell'immagine del BSP 5 con scipy, alsaaudio, usb gadget support
+# 2021 03 25
+  - **inizio: 9.00,      fine:**
+  - Bitbake dell'immagine del BSP 5 con scipy, alsaaudio, usb gadget, flask-socketio
 
 # 2021 03 24
-  - **inizio: 9.00,      fine:**
+  - **inizio: 9.00,      fine:17.50**
   - Testing del caricamento di file .elf dal bootloader di imx7
   - Installazione di scipy su Yocto project insieme a pyalsaaudio
 
