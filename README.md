@@ -1,6 +1,9 @@
 ## Tirocinio
-# 2021 03 25
+# 2021 03 26
   - **inizio: 9.00,      fine:**
+  - Studio del protocollo bluetooth BLE
+# 2021 03 25
+  - **inizio: 9.00,      fine: 17.50**
   - Bitbake dell'immagine del BSP 5 con scipy, alsaaudio, usb gadget, flask-socketio
 
 # 2021 03 24
@@ -13,7 +16,7 @@
   - Creazione di script per lettura di interrupt da gpio e utilizzo di threading
 
 # 2021 03 22
-  - **inizio: 10.00,      fine:18.40**
+  - **inizio: 10.00,      fine: 18.40**
   - Creazione tutorial di installazione di pyalsaaudio sul modulo
   - Creazione di uno script di esempio
 
