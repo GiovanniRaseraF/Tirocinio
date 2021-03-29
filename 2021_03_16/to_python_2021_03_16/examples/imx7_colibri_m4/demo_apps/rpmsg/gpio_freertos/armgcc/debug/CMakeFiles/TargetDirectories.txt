@@ -1,0 +1,3 @@
+C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_16/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/debug/CMakeFiles/edit_cache.dir
+C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_16/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/debug/CMakeFiles/button_press_log.dir
+C:/Users/giovannirasera/source/repos/Tirocinio/2021_03_16/to_python_2021_03_16/examples/imx7_colibri_m4/demo_apps/rpmsg/gpio_freertos/armgcc/debug/CMakeFiles/rebuild_cache.dir
