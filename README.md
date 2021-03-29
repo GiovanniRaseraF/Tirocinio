@@ -1,6 +1,10 @@
 ## Tirocinio
-# 2021 03 26
+# 2021 03 29
   - **inizio: 9.00,      fine:**
+  - Studio del protocollo bluetooth BLE
+
+# 2021 03 26
+  - **inizio: 9.00,      fine: 17.30**
   - Studio del protocollo bluetooth BLE
 # 2021 03 25
   - **inizio: 9.00,      fine: 17.50**
