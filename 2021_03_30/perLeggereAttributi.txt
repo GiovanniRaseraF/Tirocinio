@@ -1,0 +1,116 @@
+ connect EB:56:B2:A5:BA:0c
+Attempting to connect to EB:56:B2:A5:BA:0c
+Failed to connect: org.bluez.Error.Failed
+[CHG] Device EB:56:B2:A5:BA:0C RSSI: -79
+[CHG] Device EB:56:B2:A5:BA:0C Name: CynexoArduinoNano33BLE
+[CHG] Device EB:56:B2:A5:BA:0C Alias: CynexoArduinoNano33BLE
+[bluetooth]# connect EB:56:B2:A5:BA:0c
+Attempting to connect to EB:56:B2:A5:BA:0c
+[CHG] Device EB:56:B2:A5:BA:0C Connected: yes
+Connection successful
+[CynexoArduinoNano33BLE]# info
+Device EB:56:B2:A5:BA:0C (public)
+        Name: CynexoArduinoNano33BLE
+        Alias: CynexoArduinoNano33BLE
+        Paired: no
+        Trusted: no
+        Blocked: no
+        Connected: yes
+        LegacyPairing: no
+        UUID: Generic Access Profile    (00001800-0000-1000-8000-00805f9b34fb)
+        UUID: Generic Attribute Profile (00001801-0000-1000-8000-00805f9b34fb)
+        UUID: Unknown                   (0000180c-0000-1000-8000-00805f9b34fb)
+        RSSI: -79
+[CHG] Device EB:56:B2:A5:BA:0C Name: Arduino
+[CHG] Device EB:56:B2:A5:BA:0C Alias: Arduino
+[CHG] Device EB:56:B2:A5:BA:0C ServicesResolved: yes
+[CynexoArduinoNano33BLE]# manu gatt
+Invalid command in menu main: manu
+
+Use "help" for a list of available commands in a menu.
+Use "menu <submenu>" if you want to enter any submenu.
+Use "back" if you want to return to menu main.
+[CynexoArduinoNano33BLE]# menu gatt
+Menu gatt:
+Available commands:
+-------------------
+list-attributes [dev/local]                       List attributes
+select-attribute <attribute/UUID>                 Select attribute
+attribute-info [attribute/UUID]                   Select attribute
+read [offset]                                     Read attribute value
+write <data=xx xx ...> [offset] [type]            Write attribute value
+acquire-write                                     Acquire Write file descriptor
+release-write                                     Release Write file descriptor
+acquire-notify                                    Acquire Notify file descriptor
+release-notify                                    Release Notify file descriptor
+notify <on/off>                                   Notify attribute value
+clone [dev/attribute/UUID]                        Clone a device or attribute
+register-application [UUID ...]                   Register profile to connect
+unregister-application                            Unregister profile
+register-service <UUID> [handle]                  Register application service.
+unregister-service <UUID/object>                  Unregister application service
+register-includes <UUID> [handle]                 Register as Included service in.
+unregister-includes <Service-UUID><Inc-UUID>      Unregister Included service.
+register-characteristic <UUID> <Flags=read,write,notify...> [handle] Register application characteristic
+unregister-characteristic <UUID/object>           Unregister application characteristic
+register-descriptor <UUID> <Flags=read,write...> [handle] Register application descriptor
+unregister-descriptor <UUID/object>               Unregister application descriptor
+back                                              Return to main menu
+version                                           Display version
+quit                                              Quit program
+exit                                              Quit program
+help                                              Display help about this program
+export                                            Print environment variables
+[CynexoArduinoNano33BLE]# select-attribute /org/bluez/hci0/dev_EB_56_B2_A5_BA_0
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_08/service0006
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_08/service0006/char0007
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_08/service0006/char0007/desc0009
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_08/service000a
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_08/service000a/char000b
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006/char0007
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006/char0007/desc0009
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a/char000b
+[CynexoArduinoNano33BLE]# select-attribute /org/bluez/hci0/dev_EB_56_B2_A5_BA_0
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_08/service0006
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_08/service0006/char0007
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_08/service0006/char0007/desc0009
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_08/service000a
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_08/service000a/char000b
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006/char0007
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006/char0007/desc0009
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a/char000b
+[CynexoArduinoNano33BLE]# select-attribute /org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006/char0007
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006/char0007/desc0009
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a/char000b
+[CynexoArduinoNano33BLE]# select-attribute /org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006/char0007
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service0006/char0007/desc0009
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a/char000b
+[CynexoArduinoNano33BLE]# select-attribute /org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a
+[Arduino:/service000a]# read
+Unable to read attribute /org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a
+[Arduino:/service000a]# select-attribute /org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a
+/org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a/char000b
+[Arduino:/service000a]# select-attribute /org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a/char000b
+[Arduino:/service000a/char000b]# rad
+Invalid command in menu gatt: rad
+
+Use "help" for a list of available commands in a menu.
+Use "menu <submenu>" if you want to enter any submenu.
+Use "back" if you want to return to menu main.
+[Arduino:/service000a/char000b]# read
+Attempting to read /org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a/char000b
+[CHG] Attribute /org/bluez/hci0/dev_EB_56_B2_A5_BA_0C/service000a/char000b Value:
+  48 65 6c 6c 6f 20 57 6f 72 6c 64 21              Hello World!
+  48 65 6c 6c 6f 20 57 6f 72 6c 64 21              Hello World!
+[Arduino:/service000a/char000b]#

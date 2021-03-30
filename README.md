@@ -1,6 +1,10 @@
 ## Tirocinio
+# 2021 03 30
+  - **inizio: 9.00,      fine: 17.30**
+  - Creazione di un esempio per l'utilizzo di bluetooth ble su arduino nano 33 ble
+  
 # 2021 03 29
-  - **inizio: 9.00,      fine:**
+  - **inizio: 9.00,      fine: 17.30**
   - Studio del protocollo bluetooth BLE
 
 # 2021 03 26
