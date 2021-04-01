@@ -1,4 +1,12 @@
 ## Tirocinio
+# 2021 04 01
+  - **inizio: 9.00,      fine:**
+  - Creazione progetto lettura co2
+
+# 2021 03 31
+  - **inizio: 9.00,      fine: 17.10**
+  - Creazione progetto lettura co2
+
 # 2021 03 30
   - **inizio: 9.00,      fine: 17.40**
   - Creazione di un esempio per l'utilizzo di bluetooth ble su arduino nano 33 ble
