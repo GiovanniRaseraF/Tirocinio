@@ -1,6 +1,6 @@
 ## Tirocinio
 # 2021 04 01
-  - **inizio: 9.00,      fine:**
+  - **inizio: 9.00,      fine: 18.07**
   - Creazione progetto lettura co2
 
 # 2021 03 31
