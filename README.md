@@ -1,4 +1,9 @@
 ## Tirocinio
+# 2021 04 02
+  - **inizio: 9.00,      fine: **
+  - Creazione del lettore dei comandi nell'arduino
+  - Comunicazioni dei valori dei sensori tramite bluetooth
+
 # 2021 04 01
   - **inizio: 9.00,      fine: 18.07**
   - Creazione progetto lettura co2
