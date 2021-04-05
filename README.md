@@ -1,6 +1,10 @@
 ## Tirocinio
+# 2021 04 06
+  - **inizio: 9.00,      fine:**
+  - 
+
 # 2021 04 02
-  - **inizio: 9.00,      fine: **
+  - **inizio: 9.00,      fine: 17.30**
   - Creazione del lettore dei comandi nell'arduino
   - Comunicazioni dei valori dei sensori tramite bluetooth
 
