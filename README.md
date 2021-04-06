@@ -1,7 +1,9 @@
 ## Tirocinio
 # 2021 04 06
-  - **inizio: 9.00,      fine:**
-  - 
+  - **inizio: 9.00,      fine: 17.30**
+  - Implementazione dell'interprete
+  - Implementazione della sezione di esecuzione dei comandi interpretati
+  - Implementazione del gestore degli eventi
 
 # 2021 04 02
   - **inizio: 9.00,      fine: 17.30**
