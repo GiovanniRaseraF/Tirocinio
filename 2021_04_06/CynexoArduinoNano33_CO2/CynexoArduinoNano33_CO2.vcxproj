@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>CynexoArduinoNano33_CO2</RootNamespace>
+    <ProjectName>CynexoArduinoNano33_CO2</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\CynexoArduinoNano33_CO2;$(ProjectDir)..\Libraries\Arduino_HTS221\1.0.0\Arduino_HTS221\src;$(ProjectDir)..\..\..\..\Documents\Arduino\libraries\ArduinoBLE\src;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\libraries\Wire;$(ProjectDir)..\..\..\..\Documents\Arduino\libraries\ArduinoBLE\src\utility;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\api;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\USB;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\variants\ARDUINO_NANO33BLE;$(ProjectDir)..\..\..\..\..\GIOVAN~1\source\repos\CYNEXO~1\CYNEXO~1;$(ProjectDir)..\..\..\..\..\..\PROGRA~2\MICROS~2\2019\COMMUN~1\common7\ide\EXTENS~1\2kamu2fe.kiw\MICROP~1\default\DEBUGG~1\VM_DBG;$(ProjectDir)..\..\..\..\..\GIOVAN~1\source\repos\CYNEXO~1\LIBRAR~1\ARDUIN~1\10803E~1.0\ARDUIN~1\src;$(ProjectDir)..\..\..\..\..\GIOVAN~1\DOCUME~1\Arduino\LIBRAR~1\ARDUIN~1\src;$(ProjectDir)..\..\..\..\..\GIOVAN~1\AppData\Local\ARDUIN~1\packages\arduino\hardware\mbed\1325B9~1.2\LIBRAR~1\Wire;$(ProjectDir)..\..\..\..\..\GIOVAN~1\AppData\Local\ARDUIN~1\packages\arduino\hardware\mbed\1325B9~1.2\cores\arduino;$(ProjectDir)..\..\..\..\..\GIOVAN~1\AppData\Local\ARDUIN~1\packages\arduino\hardware\mbed\1325B9~1.2\variants\ARDUIN~1;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\api\deprecated;$(ProjectDir)prefixc:\Users\giovannirasera\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\usb;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\api;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\features;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_ARM_SSG\TARGET_CM3DS_MPS2\device;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\platform\internal;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\platform\cxxsupport;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_ARM_SSG;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_ARM_SSG\TARGET_MPS2;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\arm-none-eabi;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\bits;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\sys;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\system;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\avr;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\usb;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1\include;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\platform;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM\TARGET_STM32H7;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM\TARGET_STM32H7\TARGET_STM32H747xI\TARGET_PORTENTA_H7_M7;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM\TARGET_STM32H7\TARGET_STM32H747xI\TARGET_PORTENTA_H7;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\cmsis\TARGET_CORTEX_M;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\rtos\source\TARGET_CORTEX\rtx4;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\rtos\source\TARGET_CORTEX\rtx5\Include;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM\TARGET_STM32H7\STM32Cube_FW\CMSIS;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM\TARGET_STM32H7\STM32Cube_FW\STM32H7xx_HAL_Driver;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\drivers\internal;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\hal\usb;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\platform\cxxsupport;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\rtos;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\rtos\source\TARGET_CORTEX;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\rtos\source\TARGET_CORTEX\rtx5\RTX\Include;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\arm-none-eabi\thumb\v7e-m\fpv5\softfp\bits\;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\bits;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\iosfwd;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\features\storage;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\features\mbedtls\inc;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\features\mbedtls;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.CynexoArduinoNano33_CO2.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>_VMDEBUG=1;ARDUINO_ARCH_NRF52840;ARDUINO=108013;ARDUINO_ARDUINO_NANO33BLE;ARDUINO_ARCH_MBED;ARDUINO_LIBRARY_DISCOVERY_PHASE=0;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\CynexoArduinoNano33_CO2;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\libraries\Wire;$(ProjectDir)..\..\..\..\Documents\Arduino\libraries\Arduino_HTS221\src;$(ProjectDir)..\..\..\..\Documents\Arduino\libraries\ArduinoBLE\src;$(ProjectDir)..\..\..\..\Documents\Arduino\libraries\ArduinoBLE\src\utility;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\api;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\USB;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\variants\ARDUINO_NANO33BLE;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\api\deprecated;$(ProjectDir)prefixc:\Users\giovannirasera\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\usb;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\api;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\features;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_ARM_SSG\TARGET_CM3DS_MPS2\device;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\platform\internal;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\platform\cxxsupport;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_ARM_SSG;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_ARM_SSG\TARGET_MPS2;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\arm-none-eabi;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\bits;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\sys;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\system;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\avr;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\usb;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1\include;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\platform;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM\TARGET_STM32H7;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM\TARGET_STM32H7\TARGET_STM32H747xI\TARGET_PORTENTA_H7_M7;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM\TARGET_STM32H7\TARGET_STM32H747xI\TARGET_PORTENTA_H7;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\cmsis\TARGET_CORTEX_M;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\rtos\source\TARGET_CORTEX\rtx4;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\rtos\source\TARGET_CORTEX\rtx5\Include;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM\TARGET_STM32H7\STM32Cube_FW\CMSIS;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\targets\TARGET_STM\TARGET_STM32H7\STM32Cube_FW\STM32H7xx_HAL_Driver;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\drivers\internal;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\hal\usb;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\platform\cxxsupport;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\rtos;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\rtos\source\TARGET_CORTEX;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\rtos\source\TARGET_CORTEX\rtx5\RTX\Include;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\arm-none-eabi\thumb\v7e-m\fpv5\softfp\bits\;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\bits;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\arm-none-eabi\include\c++\7.2.1\iosfwd;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\tools\arm-none-eabi-gcc\7-2017q4\lib\gcc\arm-none-eabi\7.2.1;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\features\storage;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\features\mbedtls\inc;$(ProjectDir)..\..\..\..\AppData\Local\arduino15\packages\arduino\hardware\mbed\1.3.2\cores\arduino\mbed\features\mbedtls;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.CynexoArduinoNano33_CO2.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>ARDUINO_ARCH_NRF52840;ARDUINO=108013;ARDUINO_ARDUINO_NANO33BLE;ARDUINO_ARCH_MBED;ARDUINO_LIBRARY_DISCOVERY_PHASE=0;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="CynexoArduinoNano33_CO2.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\arduino folders read me.txt">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interpreter.h" />
+    <ClInclude Include="Service.h" />
+    <ClInclude Include="ServiceHandler.h" />
+    <ClInclude Include="__vm\.CynexoArduinoNano33_CO2.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Interpreter.cpp" />
+    <ClCompile Include="ServiceHandler.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.build.auto_discover_includes="0" arduino.upload.port="COM6" config.Debug.customdebug_nano33ble_debugger_type="universal" custom_nano33ble_vm.programmer_name="stlink" custom_nano33ble_vm.upload.useprogrammer="0" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
