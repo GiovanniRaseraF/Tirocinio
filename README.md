@@ -2,7 +2,9 @@
 # 2021 04 07
   - **inizio: 9.00,      fine: 17.30**
   - Implementazione del gestore degli eventi
-  - Presentazione a Fabrizio del lavoro svolto 
+  - Presentazione a Fabrizio del lavoro svolto
+  - Creazione del diagramma del progetto
+  - Ristrutturazione del codice 
 
 # 2021 04 06
   - **inizio: 9.00,      fine: 17.30**
