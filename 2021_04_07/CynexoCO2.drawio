@@ -1,0 +1,91 @@
+<mxfile>
+    <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+        <mxGraphModel dx="1437" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-10" value="Commands and Interpretation" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;gradientColor=#ffffff;fillColor=none;dashed=1;dashPattern=1 1;verticalAlign=top;strokeColor=#11F09E;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="-40" y="40" width="810" height="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-0" value="Tokenizer" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="9.5" y="120" width="380" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-2" value="- String line;&lt;br&gt;&lt;br&gt;- String getSensor(String&amp;amp; line);&lt;br&gt;- vector&amp;lt;String&amp;gt; getParamsVals(String&amp;amp; line);&lt;br&gt;- vector&amp;lt;String&amp;gt; tokenize(String&amp;amp; line);&lt;br&gt;&lt;br&gt;+ PureCommand createCommand(String&amp;amp; line);" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qlFxfynZ3Ai06tStSuGx-0" vertex="1">
+                    <mxGeometry y="29" width="380" height="141" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-3" value="PureCommand" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="450" y="110" width="280" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-5" value="+ String primary;&lt;br&gt;+ String sensor;&lt;br&gt;+ vector&amp;lt;pair&amp;lt;String, float&amp;gt;&amp;gt; params{&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{&quot;min&quot;,&amp;nbsp; &amp;nbsp;PARAM_NOT_SET},&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{&quot;max&quot;,&amp;nbsp; PARAM_NOT_SET},&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{&quot;diff&quot;,&amp;nbsp; &amp;nbsp; PARAM_NOT_SET},&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{&quot;time&quot;,&amp;nbsp; PARAM_NOT_SET}&lt;br&gt;};" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qlFxfynZ3Ai06tStSuGx-3" vertex="1">
+                    <mxGeometry y="29" width="280" height="141" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="qlFxfynZ3Ai06tStSuGx-3" source="qlFxfynZ3Ai06tStSuGx-21" target="qlFxfynZ3Ai06tStSuGx-21" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-21" value="+ PureCommand addPrimary(String p);&lt;br&gt;+&amp;nbsp;PureCommand addSensor(String s);&lt;br&gt;+&amp;nbsp;PureCommand set(String param, float value);&lt;br&gt;+ float get(String param) const;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=none;gradientColor=#ffffff;align=left;verticalAlign=top;" parent="qlFxfynZ3Ai06tStSuGx-3" vertex="1">
+                    <mxGeometry y="170" width="280" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-7" value="This class need to read a line in input and create a PureCommand&lt;br&gt;&amp;nbsp; - the goal is to try to Tokenize and crete a command even if the line&lt;br&gt;&amp;nbsp; &amp;nbsp; is not well written&amp;nbsp;&lt;br&gt;&amp;nbsp; - the class does not know about all different sensors and parameters&lt;br&gt;&lt;br&gt;&lt;br&gt;These are the commands supported:&lt;br&gt;&amp;nbsp;&lt;span&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;- get {SENSOR};&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;- SENSOR&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;- temperature&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;- humidity&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;- set-notify {SENSOR} ({PARAMA} {VAL}, {PARAMA} {VAL},);&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;- SENSOR:&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;- PARAM VAL&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;- temperature&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;- min&lt;span&gt;&#9;&lt;/span&gt;val&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;- max&lt;span&gt;&#9;&lt;/span&gt;val&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;- diff&lt;span&gt;&#9;&lt;/span&gt;val&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;- time&lt;span&gt;&#9;&lt;/span&gt;val&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="strokeWidth=5;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#ffffff;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="9.5" y="300" width="381" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-11" value="SensorParamEvent" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;dashed=1;dashPattern=1 1;strokeWidth=1;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="880" y="120" width="380" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-12" value="+ float min;&#10;+ float max;&#10;+ float diff;&#10;+ float time;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qlFxfynZ3Ai06tStSuGx-11" vertex="1">
+                    <mxGeometry y="26" width="380" height="74" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="qlFxfynZ3Ai06tStSuGx-11" vertex="1">
+                    <mxGeometry y="100" width="380" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-14" value="+ SensorParamEvent() {};&#10;+ SensorParamEvent(float min, float max, float diff, float time);&#10;&#10;+ void setNotify(float min, float max, float diff, float time);&#10;+ bool checkNotify(float value, unsigned long currentTime);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qlFxfynZ3Ai06tStSuGx-11" vertex="1">
+                    <mxGeometry y="108" width="380" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-15" value="This class allows to specify when to be notified using the checkNotify&lt;br&gt;method and need to be specific for each sensor" style="strokeWidth=3;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;fillColor=none;gradientColor=#ffffff;strokeColor=#B9E0A5;verticalAlign=top;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="880" y="340" width="380" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="qlFxfynZ3Ai06tStSuGx-15" target="qlFxfynZ3Ai06tStSuGx-15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-17" value="ServiceHandler" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#A50040;strokeWidth=3;fillColor=#d80073;fontColor=#ffffff;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="870" y="520" width="540" height="500" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-18" value="- BLELocalDevice&amp; BLE;&#10;&#10;// Services&#10;// Environmental&#10;+ BLEService environmentService;&#9;&#10;&#9;// LogReport&#10;+ BLEService messageService;&#10;&#10;// Characteristics&#10;// Temperature&#10;+ SensorParamEvent temperatureEvent;&#10;+ BLEIntCharacteristic temperatureCharacteristic;&#10;&#9;// Temperature&#10;+ SensorParamEvent humidityEvent{ 20, 50, 4, 600000 };&#10;+ BLEIntCharacteristic humidityCharacteristic&#10;&#10;&#9;// LogReport&#10;+ BLEStringCharacteristic logReportMessageCharacteristic&#10;&#9;// Command&#10;+ BLEStringCharacteristic commandMessageCharacteristic;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qlFxfynZ3Ai06tStSuGx-17" vertex="1">
+                    <mxGeometry y="26" width="540" height="294" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="qlFxfynZ3Ai06tStSuGx-17" vertex="1">
+                    <mxGeometry y="320" width="540" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-20" value="+ float readTemperature();&#10;+ float readHumidity();&#10;+ float readCo2();&#10;+ float readNoise();&#10;&#10;+ bool writeLogReport(String message);&#10;&#10;+ String readLine();&#10;+ String executePureCommand();&#10;&#10;+ String update();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qlFxfynZ3Ai06tStSuGx-17" vertex="1">
+                    <mxGeometry y="328" width="540" height="172" as="geometry"/>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-9" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.004;entryY=0.398;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.01;exitY=0.329;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="qlFxfynZ3Ai06tStSuGx-2" target="qlFxfynZ3Ai06tStSuGx-5" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="380" y="195" as="sourcePoint"/>
+                        <mxPoint x="539.5" y="194.58" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-23" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.995;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.256;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="qlFxfynZ3Ai06tStSuGx-18" target="qlFxfynZ3Ai06tStSuGx-14" edge="1">
+                    <mxGeometry x="-0.2465" y="-2" width="160" relative="1" as="geometry">
+                        <mxPoint x="1490" y="730" as="sourcePoint"/>
+                        <mxPoint x="1410" y="489.99799999999993" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1490" y="620"/>
+                            <mxPoint x="1490" y="227"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="qlFxfynZ3Ai06tStSuGx-24" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.419;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="qlFxfynZ3Ai06tStSuGx-20" target="qlFxfynZ3Ai06tStSuGx-21" edge="1">
+                    <mxGeometry x="-0.6706" width="160" relative="1" as="geometry">
+                        <mxPoint x="870" y="496.46" as="sourcePoint"/>
+                        <mxPoint x="718.0999999999995" y="203.54200000000012" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="590" y="920"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
