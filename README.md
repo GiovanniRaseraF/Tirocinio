@@ -2,6 +2,7 @@
 # 2021 04 08
   - **inizio: 9.00,      fine:**
   - Ristrutturazione del codice
+  - Installazione del layer per far funzionare il bluetooth nella som
   
 # 2021 04 07
   - **inizio: 9.00,      fine: 17.30**
