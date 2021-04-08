@@ -203,4 +203,6 @@ get humidity;
 get co2;
 get noise;
 
+Set-notify hello (min 14);
+
 */

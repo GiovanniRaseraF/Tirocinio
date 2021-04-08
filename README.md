@@ -1,4 +1,8 @@
 ## Tirocinio
+# 2021 04 08
+  - **inizio: 9.00,      fine:**
+  - Ristrutturazione del codice
+  
 # 2021 04 07
   - **inizio: 9.00,      fine: 17.30**
   - Implementazione del gestore degli eventi
