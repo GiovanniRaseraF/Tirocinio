@@ -1,9 +1,12 @@
 set-notify temperature (min 22, max 24, time 3000);
 set-notify temperature (time 30000);
+set-notify temperature (time 2000);
 set-notify temperature (min ff);
 reset-notify temperature;
 
 set-notify humidity (max 60, time 10000);
+set-notify humidity (max 40, time 1000);
+set-notify humidity (time 10000);
 reset-notify humidity;
 
 set-delay lowpower time 3000;
@@ -14,7 +17,18 @@ get humidity;
 
 get co2;
 
-get 
-temperature
+get temperature
 ;
+
+
+// TODO
+set-notify errors;
+set-notify serial;
+
+get-info all;
+get-info sensors;
+get-info notification;
+get-info default;
+get-info help; 
+get-info arduino;
 

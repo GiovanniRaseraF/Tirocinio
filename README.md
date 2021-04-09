@@ -1,8 +1,9 @@
 ## Tirocinio
 # 2021 04 09
-  - **inizio: 9.00,      fine:**
+  - **inizio: 9.00,      fine: 17.40**
   - Ristrutturazione del codice
   - Aggiunta della possibilità di aumentare il tempo di lowpower mode per risparmiare batteria
+  - Chiamata con fabrizio per la discussione sul codice
 
 # 2021 04 08
   - **inizio: 9.00,      fine: 18.00**
