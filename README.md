@@ -1,6 +1,11 @@
 ## Tirocinio
-# 2021 04 08
+# 2021 04 09
   - **inizio: 9.00,      fine:**
+  - Ristrutturazione del codice
+  - Aggiunta della possibilità di aumentare il tempo di lowpower mode per risparmiare batteria
+
+# 2021 04 08
+  - **inizio: 9.00,      fine: 18.00**
   - Ristrutturazione del codice
   - Installazione del layer per far funzionare il bluetooth nella som
   
