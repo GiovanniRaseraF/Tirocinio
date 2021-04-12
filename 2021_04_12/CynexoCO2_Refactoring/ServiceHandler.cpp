@@ -82,6 +82,45 @@ bool ServiceHandler::notifyCo2(float co2){
   co2Characteristic.writeValueLE(co2 * 100);
 }
 
+/* Danger levels            Color               Min     Max
+// Good                     Green               Below   1000
+// Attention                Yellow              1000    1400
+// More attention           Yellow blinking     1400    2000
+// Bad                      Red    blinking     2000    Above*/
+void ServiceHandler::blinkDangerLed(float co2){
+  if(co2 <= 1000){
+    digitalWrite(BLUE, HIGH);
+    digitalWrite(RED, HIGH);
+    digitalWrite(GREEN, LOW);
+  }else if(1000 < co2 && co2 <= 1400){
+    digitalWrite(BLUE, LOW);
+    digitalWrite(RED, HIGH);
+    digitalWrite(GREEN, HIGH);
+  }else if(1400 < co2 && co2 <= 2000){
+    for(int i = 0; i < 5; i++){
+      digitalWrite(BLUE, LOW);
+      digitalWrite(RED, HIGH);
+      digitalWrite(GREEN, HIGH);
+      delay(100);
+      digitalWrite(BLUE, HIGH);
+      digitalWrite(RED, HIGH);
+      digitalWrite(GREEN, HIGH);
+      delay(100);
+    }
+  }else{
+    for(int i = 0; i < 5; i++){
+      digitalWrite(BLUE, HIGH);
+      digitalWrite(RED, LOW);
+      digitalWrite(GREEN, HIGH);
+      delay(100);
+      digitalWrite(BLUE, HIGH);
+      digitalWrite(RED, HIGH);
+      digitalWrite(GREEN, HIGH);
+      delay(100);
+    }
+  }
+}
+
 bool ServiceHandler::writeLogReport(String& message) {
 	logReportMessageCharacteristic.writeValue(message);
 
@@ -101,8 +140,9 @@ String ServiceHandler::readLineFromBLE(void) {
 	}
 
 	return ret;
-
 }
+
+
 
 String ServiceHandler::executePureCommand(PureCommand& command) {
 	// Get
@@ -200,23 +240,29 @@ String ServiceHandler::update(String& line, unsigned long& currentTime, unsigned
 	if ((currentTime - pastTime) < delayTimeMillis)
 		return "";
 
-	// Notification
+	// Sensor reading
 	while(!scd30.isAvailable());
   scd30.getCarbonDioxideConcentration(resultHTC);
   co2           = resultHTC[0];
   temperature   = resultHTC[1];
   humidity      = resultHTC[2];
-  
+
+  // Notification and blinking danger
+  blinkDangerLed(co2);
+
 	if (temperatureEvent.checkNotify(temperature, millis())) {
 		notifyTemperature(temperature);
+   
     ret += "\nTemperature: " + String(temperature);
 	}
 	if (humidityEvent.checkNotify(humidity, millis())) {
 		notifyHumidity(humidity);
+   
     ret += "\nHumidity: " + String(humidity);
 	}
   if (co2Event.checkNotify(co2, millis())){
     notifyCo2(co2);
+    
     ret += "\nCo2: " + String(co2);
   }
 	
@@ -226,7 +272,7 @@ String ServiceHandler::update(String& line, unsigned long& currentTime, unsigned
 
 	// Command execution
 	command = Tokenizer::createCommand(line);
-	ret += executePureCommand(command);
+	ret += "\n" + executePureCommand(command);
 
 	return ret;
 }

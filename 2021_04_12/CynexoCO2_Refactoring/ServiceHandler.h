@@ -19,6 +19,9 @@
 #include "SensorParamEvent.h"
 #define TEMPERATURE_OFFSET 5
 #define MIN_DELAY_LOWPOWER 2000
+#define RED 22                    
+#define BLUE 24            
+#define GREEN 23 
 
 class ServiceHandler{
 public:
@@ -46,6 +49,12 @@ public:	//Utility
 
   float readCo2();
   bool notifyCo2(float co2);
+  /* Danger levels            Color               Min     Max
+  // Good                     Green               Below   1000
+  // Attention                Yellow              1000    1400
+  // More attention           Yellow blinking     1400    2000
+  // Bad                      Red    blinking     2000    Above*/
+  void blinkDangerLed(float co2);
   
 	bool writeLogReport(String& message);
 	
@@ -64,7 +73,7 @@ private:
   float resultHTC[3];
 
 public:
-	int delayTimeMillis = 10000; //10 seconds
+	int delayTimeMillis = 2000; //10 seconds
 
 public: // Available Services
 	// Environmental
@@ -78,7 +87,7 @@ public: // Available Characteristics
 		{"min", 20},
 		{"max", 25},
 		{"diff", 2},
-		{"time", 60000}
+		{"time", 2000}
 	} };
 	SensorParamEvent temperatureEvent{ temperatureDefault };
 	BLEIntCharacteristic temperatureCharacteristic{
@@ -90,7 +99,7 @@ public: // Available Characteristics
 		{"min", 25},
 		{"max", 40},
 		{"diff", 15},
-		{"time", 60000}
+		{"time", 2000}
 	} };
 	SensorParamEvent humidityEvent{ humidityDefault };
 	BLEIntCharacteristic humidityCharacteristic{
@@ -101,14 +110,13 @@ public: // Available Characteristics
   PureCommand co2Default{ String("Co2"), String("default"), {
     {"min", 25},
     {"max", 40},
-    {"time", 60000}
+    {"time", 2000}
   } };
   SensorParamEvent co2Event{ co2Default };
   BLEIntCharacteristic co2Characteristic{
     "936b6a25-e503-4f7c-9349-bcc76c22b8c3",
     BLERead | BLENotify
   };
-
 	// LogReport
 	BLEStringCharacteristic logReportMessageCharacteristic{
 		"19B10001-E8F2-537E-4F6C-D104768A1214",
