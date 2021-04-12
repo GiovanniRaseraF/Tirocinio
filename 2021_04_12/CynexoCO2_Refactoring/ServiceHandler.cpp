@@ -140,7 +140,7 @@ String ServiceHandler::executePureCommand(PureCommand& command) {
 
 			return "Updated NOTIFY ON Humidity";
 		}
-		else if ("co2" == command.sensor){{
+		else if ("co2" == command.sensor){
 			co2Event.setNotify(command);
 
 			return "Updated NOTIFY ON co2";
