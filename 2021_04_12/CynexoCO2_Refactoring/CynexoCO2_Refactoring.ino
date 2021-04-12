@@ -11,6 +11,10 @@
 #include "PureCommand.h"
 #include "ServiceHandler.h"
 #include "Tokenizer.h"
+#define RED 22     
+#define BLUE 24     
+#define GREEN 23
+#define LED_PWR 25
 
 ServiceHandler serviceHandler{BLE};
 bool wasConnected = false;
@@ -65,7 +69,8 @@ void loop() {
 
 void setup() {
   Wire.begin();
-	digitalWrite(LED_PWR, LOW);
+	digitalWrite(RED, HIGH);
+
 	Serial.begin(9600);
 	while (!Serial);
 	// BLE init
