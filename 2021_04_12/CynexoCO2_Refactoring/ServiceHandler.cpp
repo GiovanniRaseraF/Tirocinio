@@ -4,6 +4,7 @@ ServiceHandler::ServiceHandler(BLELocalDevice& B) : BLE{ B }{}
 
 bool ServiceHandler::start(void) {
   // HTC sensor
+  scd30.setAutoSelfCalibration(1);
   scd30.initialize();
   
 	//messageService.addCharacteristic(logReportMessageCharacteristic);
