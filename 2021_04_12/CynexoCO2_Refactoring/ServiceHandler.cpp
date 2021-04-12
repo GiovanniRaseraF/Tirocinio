@@ -118,12 +118,12 @@ String ServiceHandler::executePureCommand(PureCommand& command) {
 
 			return "Humidity notified: " + String(humidity);
 		}
-    else if ("co2" == command.sensor){
-      float co2 = readCo2();
-      notifyCo2(co2);
-      
-      return "Co2 notified: " + String(co2);
-    }
+		else if ("co2" == command.sensor){
+			float co2 = readCo2();
+			notifyCo2(co2);
+			
+			return "Co2 notified: " + String(co2);
+		}
 		else {
 			return "Sensor: " + command.sensor + "does NOT exists";
 		}
@@ -140,6 +140,11 @@ String ServiceHandler::executePureCommand(PureCommand& command) {
 
 			return "Updated NOTIFY ON Humidity";
 		}
+		else if ("co2" == command.sensor){{
+			co2Event.setNotify(command);
+
+			return "Updated NOTIFY ON co2";
+		}
 		else {
 			return "Sensor: " + command.sensor + " does NOT exists";
 		}
@@ -155,6 +160,9 @@ String ServiceHandler::executePureCommand(PureCommand& command) {
 			humidityEvent.setNewNotify(humidityDefault);
 
 			return "RESET NOTIFY ON Humidity";
+		}
+		else if ("co2" == command.sensor){
+			co2Event.setNotify(co2Default);
 		}
 		else {
 			return "Sensor: " + command.sensor + "does NOT exists";
