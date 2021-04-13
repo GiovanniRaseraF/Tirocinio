@@ -1,4 +1,14 @@
 ## Tirocinio
+# 2021 04 12
+  - **inizio: 9.00,      fine:**
+  
+
+# 2021 04 12
+  - **inizio: 9.00,      fine: 17.40**
+  - Implementazione di un piccolo sketch per il raccoglimento di dati co2 e  temperatura
+  - Lettura dalla comunicazione I2C
+  - Raccoglimento e log dei dati da python
+
 # 2021 04 09
   - **inizio: 9.00,      fine: 17.40**
   - Ristrutturazione del codice
