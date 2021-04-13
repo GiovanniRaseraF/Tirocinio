@@ -28,9 +28,9 @@ if __name__ == "__main__":
     while(True):
         line = (ard.readline()).decode('UTF-8')
          #Estract delta time
-        co2 = line.split(',')
+        co2 = line
         current_time = datetime.datetime.now()
         #Write to file
-        fileLog.write("%s,%s\n" % (current_time, co2))
+        fileLog.write("%s,%s\n" % (current_time, co2.strip()))
         fileLog.flush()
         print(line)
