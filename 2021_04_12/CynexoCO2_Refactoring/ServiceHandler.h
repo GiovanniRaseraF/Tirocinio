@@ -123,7 +123,7 @@ public: // Available Characteristics
 		BLERead,
 		50
 	};
-	// Command NOT WORKING
+	// Command
 	BLEStringCharacteristic commandMessageCharacteristic{
 		"19B10002-E8F2-537E-4F6C-D104768A1214",
 		BLEWrite | BLERead,
