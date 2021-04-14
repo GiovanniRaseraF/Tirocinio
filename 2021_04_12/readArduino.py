@@ -16,7 +16,7 @@ def signal_handler(sig, frame):
     sys.exit(0)
 
 #The following line is for serial over GPIO
-port = '/dev/ttyACM0'
+port = '/dev/ttyACM1'
 
 ard = serial.Serial(port, 9600)
 
