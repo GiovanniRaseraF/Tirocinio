@@ -1,7 +1,12 @@
 ## Tirocinio
-# 2021 04 12
-  - **inizio: 9.00,      fine:**
-  
+# 2021 04 14
+
+# 2021 04 13
+  - **inizio: 9.00,      fine: 18.00**
+  - Creazione del dispositivo per il rilevamento del co2
+  - Saldadura delle componenti e debugging delle tracce
+  - Risoluzione di alcuni problemi legati alla comunicazione i2c
+  - Creazione di uno sketch per la lettura di alcuni interrupt e l'invio delle informazioni tramite bluetooth
 
 # 2021 04 12
   - **inizio: 9.00,      fine: 17.40**
