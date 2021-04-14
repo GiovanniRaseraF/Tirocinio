@@ -1,7 +1,3 @@
-#include <ArduinoBLE.h>
-#include <vector>
-#include <tuple>
-#include <Arduino.h>
 #include <functional>
 #include <algorithm>
 #include <time.h>
@@ -60,6 +56,7 @@ void reset(){
   digitalWrite(GREEN, HIGH);
   digitalWrite(RED, HIGH);
   digitalWrite(BLUE, LOW);
+  digitalWrite(LED1, LOW);
   cynexoBigButtonCharacteristic.writeValue(0);
   cynexoBigButtonEDGECharacteristic.writeValue('s');
   
@@ -98,6 +95,8 @@ void setup(){
   buttonService.addCharacteristic(cynexoBigButtonEDGECharacteristic);
   buttonService.addCharacteristic(ledOnCharacteristic);
   messageService.addCharacteristic(commandMessageCharacteristic);
+  BLE.setAdvertisedService(messageService);
+  BLE.setAdvertisedService(buttonService);
   BLE.addService(messageService);
   BLE.addService(buttonService);
   BLE.setLocalName("Cynexo Big Button");

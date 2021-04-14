@@ -1,5 +1,13 @@
 ## Tirocinio
 # 2021 04 14
+  - **inizio: 9.00,      fine:**
+  - Realizzazione della parte del bottone collegato ai rotopad
+  - Skeck che implementa le seguenti funzioni
+    - Appena il bottone è nel fronte di RISING invio al bluetooth: (timestamp, rising)
+    - Appena rilascio il bottono passa in FALLING e invio (timestamp, falling)
+    - Il master invia al pulsantone un segnale di go -> il led del pulsantone si deve accendere e viene registrato il timing del momento in cui questo avviene
+    - Quando il pulsante viene premuto rimandi indietro al "master" sia il tempo in cui si è acceso il led che il tempo in cui è stato premuto il pulsante
+  - Realizzazione del codice del master
 
 # 2021 04 13
   - **inizio: 9.00,      fine: 18.00**
