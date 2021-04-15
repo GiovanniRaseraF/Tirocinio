@@ -1,6 +1,10 @@
 ## Tirocinio
-# 2021 04 14
+# 2021 04 15
   - **inizio: 9.00,      fine:**
+  - Realizzazione del codice del master
+
+# 2021 04 14
+  - **inizio: 9.00,      fine: 17.40**
   - Realizzazione della parte del bottone collegato ai rotopad
   - Skeck che implementa le seguenti funzioni
     - Appena il bottone è nel fronte di RISING invio al bluetooth: (timestamp, rising)
