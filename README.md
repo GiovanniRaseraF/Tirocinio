@@ -1,7 +1,11 @@
 ## Tirocinio
-# 2021 04 15
+# 2021 04 16
   - **inizio: 9.00,      fine:**
+
+# 2021 04 15
+  - **inizio: 9.00,      fine: 17.00**
   - Realizzazione del codice del master
+  - Realizzazione di una parte dell'esperimento rotopad
 
 # 2021 04 14
   - **inizio: 9.00,      fine: 17.40**
