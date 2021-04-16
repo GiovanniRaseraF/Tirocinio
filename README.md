@@ -1,6 +1,10 @@
 ## Tirocinio
 # 2021 04 16
   - **inizio: 9.00,      fine:**
+  - Indicazione del livello della batteria del dispositivo BIGBUTTON
+    - La batteria viene indicata tramite il pin A0 in INPUT_PULLUP
+  - Lettura da parte del master
+  - Test di durata della batteria del dispositivo 
 
 # 2021 04 15
   - **inizio: 9.00,      fine: 17.00**
