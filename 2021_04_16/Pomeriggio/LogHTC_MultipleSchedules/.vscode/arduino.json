@@ -1,0 +1,6 @@
+{
+    "port": "COM4",
+    "board": "arduino:mbed_nano:nano33ble",
+    "programmer": "arduino:stlink",
+    "sketch": "LogHTC_MultipleSchedules.ino"
+}

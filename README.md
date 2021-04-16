@@ -4,7 +4,12 @@
   - Indicazione del livello della batteria del dispositivo BIGBUTTON
     - La batteria viene indicata tramite il pin A0 in INPUT_PULLUP
   - Lettura da parte del master
-  - Test di durata della batteria del dispositivo 
+  - Test di durata della batteria del dispositivo
+  - Aggiunta del multithreading al codice del dispositivo che calcola il co2
+    - Lettura dei sensori
+    - Display del led
+    - Comunicazione BLE
+    - TODO: Aggiunta di tensorflow lite
 
 # 2021 04 15
   - **inizio: 9.00,      fine: 17.00**
